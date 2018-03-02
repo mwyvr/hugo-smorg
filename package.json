@@ -1,0 +1,36 @@
+{
+  "name": "hugo-smorg",
+  "version": "0.1.0",
+  "description": "Hugo theme for a small org / individual",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-watch": "node-sass --include-path node_modules --watch scss -o static/css",
+    "scss": "node-sass --include-path node_modules scss -o static/css",
+    "scss-min": "node-sass --include-path node_modules --output-style compressed scss/smorg.scss > static/css/smorg.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solutionroute/hugo-smorg.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme",
+    "bulma",
+    "smorg",
+    "css",
+    "sass"
+  ],
+  "author": "Mike Watkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solutionroute/hugo-smorg/issues"
+  },
+  "homepage": "https://github.com/solutionroute/hugo-smorg#readme",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "bulmaswatch": "^0.6.2",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {}
+}
