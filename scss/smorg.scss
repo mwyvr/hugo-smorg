@@ -1,0 +1,14 @@
+/*! hugo-smorg theme | github.com/solutionroute/hugo-smorg */
+// See README.md for rebuild instructions.
+
+// Define default variables before importing Bulma
+@import 'bulmaswatch/sandstone/variables';
+
+// overide theme elements after theme variables but before bulma and theme overrides
+$family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+$body-size:16px; 
+
+// import bulma and swatch 
+@import 'bulma/bulma';
+@import 'bulmaswatch/sandstone/overrides';
+
