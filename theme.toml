@@ -1,21 +1,22 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Hugo Smorg"
+name = "hugo-smorg"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
+licenselink = "https://github.com/solutionroute/hugo-smorg/blob/master/LICENSE"
+description = "Responsive minimalistic Hugo theme suitable for an individual or small organization or as a starter for grander ideas."
+homepage = "https://solutionroute.github.io/hugo-smorg/"
+tags = ["blog","soho","bulma","responsive", "minimal"]
+features = ["responsive","flavors"]
 min_version = "0.36"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Mike Watkins"
+  homepage = "https://mikewatkins.ca/"
+
 
 # If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+#[original]
+  #name = ""
+  #homepage = ""
+  #repo = ""
