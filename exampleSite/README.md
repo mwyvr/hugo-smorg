@@ -9,7 +9,7 @@ theme [hugo-smorg](https://github.com/solutionroute/hugo-smorg).
 3. Link this theme to the example site provided:
 	cd exampleSite
 	mkdir themes
-	ln -s .. themes/hugo-smorg
+	ln -s ../.. themes/hugo-smorg
 4. Run Hugo:
 	hugo server
 
