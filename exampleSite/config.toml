@@ -1,0 +1,15 @@
+# exampleSite 
+#
+# Requires the Hugo static site generator. https://gohugo.io/
+
+baseURL = "http://yourwebsite.ca/"
+languageCode = "en-us"
+title = "YOURSHORTNAME"
+theme = "hugo-smorg"
+
+[params]										# used in layout:
+logotype = "YOURSHORTNAME"						# in partials/nav.html
+fullname = "Your Full Or Organization Name"		# _default/single.html, partials/footer.html
+canonifyurls = true
+
+
