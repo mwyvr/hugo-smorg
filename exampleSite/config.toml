@@ -4,11 +4,11 @@
 
 baseURL = "http://yourwebsite.ca/"
 languageCode = "en-us"
-title = "YOURSHORTNAME"
+title = "hugo-smorg"
 theme = "hugo-smorg"
 
-[params]										# used in layout:
-logotype = "YOURSHORTNAME"						# in partials/nav.html
+[params]										# used in theme layout, override in your site's layout
+logotype = '<span class="has-text-weight-bold">hugo<span class="has-text-danger">smorg</span></span>' # in partials/nav.html
 fullname = "Your Full Or Organization Name"		# _default/single.html, partials/footer.html
 canonifyurls = true
 
