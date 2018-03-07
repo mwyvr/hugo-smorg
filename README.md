@@ -1,6 +1,6 @@
 # hugo-smorg
 
-Created on March 1, 2018 this mobile-first, responsive, reasonably minimalistic [Hugo](https://gohugo.io/) theme suitable for an individual or small organization to adapt as need be.
+This is a responsive mobile-first [Bulma][]-powered, reasonably minimalistic [Hugo](https://gohugo.io/) theme suitable for an individual or small organization to adapt as need be.
 
 This theme will keep pace with current Hugo features.
 
@@ -8,9 +8,9 @@ This theme will keep pace with current Hugo features.
 
 I started this project to document how to use and customize Hugo as much for my own
 benefit as for anyone else, and I wanted to produce something that could be
-easily adapted (fonts, colours) or be extended.
+easily adapted (fonts, colours) or be extended. I have a growing collection of Hugo powered sites out there all at various states of keeping-up-to-date-edness and was driven to create a base I understood that keept up to date with Hugo.
 
-<img src="https://raw.githubusercontent.com/solutionroute/hugo-smorg/master/images/tn.png" width="900" height="600">
+<img src="https://raw.githubusercontent.com/solutionroute/hugo-smorg/master/images/tn.png" width="900" height="600" style="border: 1px solid grey">
 
 ## Features
 
