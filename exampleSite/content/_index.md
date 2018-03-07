@@ -1,18 +1,18 @@
-+++
-title = "hugo-smorg"
-date = "2018-03-01"
-menu = "main"
-+++
+---
+date: 2018-03-01
+draft: false
+title: hugo-smorg
+---
 
-hugo-smorg is a theme for [Hugo](https://gohugo.io/), a fast and flexible static site engine written in Go.
+[Hugo-smorg][] is a theme for [Hugo](https://gohugo.io/), a fast and flexible static site engine written in Go. 
 
-The theme makes use of the following open source software and components:
+This theme incorporates [Bulma][], a capable and easy to use responsive CSS framework and
+[Bulmaswatch][] theme customizations for Bulma.  
 
-* [Bulma](https://bulma.io/), a responsive, cable and easy to use CSS framework
-* [Bulmaswatch](https://jenil.github.io/bulmaswatch/) theme customizations for
-  Bulma
+Visit
+[github.com/solutionroute/hugo-smorg](https://github.com/solutionroute/hugo-smorg)
+to grab or fork this theme.
 
-Visit [github.com/solutionroute/hugo-smorg](https://github.com/solutionroute/hugo-smorg) for more
-information or to fork this theme.
-
-
+[Hugo-smorg]: https://github.com/solutionroute/hugo-smorg
+[Bulma]: https://bulma.io/
+[Bulmaswatch]: https://jenil.github.io/bulmaswatch/

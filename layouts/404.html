@@ -1,0 +1,26 @@
+{{ define "nav" }}
+   {{ partial "nav.html" . }}
+{{ end }}
+{{ define "main" }}
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+					<h1 class="title has-text-danger">Page Not Found</h1>
+					<p><code id="errorurl"></code></p>
+					<p>We're sorry, but the URL you've requested
+					cannot be found on this web site.</p><p>Sections of this site include:</p>
+					<ul>
+						<li><a href="{{ $.Site.BaseURL }}">Home</a></li>
+			{{ range .Site.Menus.sectionmenu }}
+			<li><a class="" href="{{ .URL }}">{{ .Name }}</a></li>
+			{{ end }}
+					</ul>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+

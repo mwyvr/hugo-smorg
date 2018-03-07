@@ -1,0 +1,70 @@
+# exampleSite 
+#
+# Requires the Hugo static site generator. https://gohugo.io/
+
+baseURL: "http://yourwebsite.ca/"
+languageCode: "en-us"
+title: "Hugo-smorg"
+theme: "hugo-smorg"
+author: 
+    name: "Mike Watkins"
+    email: "mw@mikewatkins.ca"
+copyright: "(C) Mike Watkins"
+enableGitInfo: false
+summaryLength: 20
+
+
+# Access in templates via $.Site.Params.somevalue ------------------------
+params: 
+    debug: true
+    canonifyurls: true
+    only_feed_summaries: true
+    # _default/single.html, partials/footer.html
+    fullname: "Your Full Or Organization Name"		
+    description: "160 characters or less describing you or your organizaiton or
+                  your site's purpose."
+    # Further customize logo in partials/logo.html; 
+    # used in partials nav.html and footer.
+    logotype: '<span class="has-text-weight-bold">hugo
+              <span class="has-text-danger">smorg</span></span>' 
+    footer: 'an open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>'
+
+# Primary Navigation Menu (partials/nav.html) ----------------------------
+# Our menu exploses About, Projects and Blog
+# Note that "About" is added to the menu within content/about.md - it's 
+# not a "section", just a single page (although you can change this).
+
+menu:
+    sectionmenu:
+        - name: "Projects"
+          url: "/project/"
+          identifier: "project"
+          weight: -10
+        - name: "Blog"
+          url: "/post/"
+          weight: -30
+        # About and other single pages not within a section folder are 
+        # added to this menu in front matter of the document i.e. about.md
+
+# Add Atom feed support, change default rss filename to rss.xml  ---------
+mediaTypes:
+  application/atom:
+    suffix: xml
+
+outputFormats:
+  Atom:
+    mediaType: application/atom
+    baseName: atom
+  RSS:
+    mediaType: application/rss
+    baseName: rss
+
+outputs:
+  home:
+    - HTML
+    - Atom
+    - RSS
+
+# Optional, disable RSS feed
+#disableKinds:
+  #- RSS

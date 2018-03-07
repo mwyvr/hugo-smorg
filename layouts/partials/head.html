@@ -1,0 +1,10 @@
+<head> <!-- see https://github.com/joshbuchea/HEAD -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" href="{{ "css/smorg.min.css" | absURL }}">
+	<base href="{{ .Site.BaseURL }}">
+	<link rel="canonical" href="{{ .Permalink }}">
+	<title>{{ .Title | default "Set Site Title in Document" }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
+    {{if .IsHome}}{{ with $.Site.Params.description }}<meta name="description" content="{{.}}">{{end}}{{else}}{{ with .Description }}<meta name="description" content="{{.}}">{{end}}{{end}}
+</head>
