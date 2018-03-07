@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+					<h1 class="title">{{ .Title }}</h1>
+					{{ if eq .Type "post" }} 
+						<p class="subtitle has-text-grey-light is-6">
+						{{ partial "page-date.html" . }}</p>
+					{{end}}
+					{{ .Content }}
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ define "footer" }}
+{{ partial "footer" . }}
+{{ end }}

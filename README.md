@@ -11,26 +11,40 @@ I've started this project to document how to use and customize Hugo as much for 
 benefit, as well as provide a relatively easy to work with base to use as is or
 extend for new projects. This theme will keep pace with current Hugo features.
 
+## Features
+
+TODO: Complete feature list
+
+Minimal design backed by capable CSS framework makes this easy to alter for
+your site.
+
+Outputs Atom syndication format with option to disable RSS; [details
+here](https://github.com/comfusion/after-dark/issues/32#issuecomment-312515542).
+
 
 ## Installation
 
-## Customization
+TODO: Complete installation note
 
 ### Adapting Hugo
 
 Content goes:
 
 	├── content
-	│   ├── about
-	│   │   └── _index.md
-	│   │   └── resume.md
-	│   ├── contact
-	│   │   └── _index.md
-	│   └── posts
-	│       └── my-first-post.md
-	│       └── i-have-more-to-say.md
-	│       └── trip-to-the-zoo.md
-	└── _index.md
+	│   ├── post
+	│   │    └── my-first-post.md
+	│   │    └── i-have-more-to-say.md
+	│   │    └── trip-to-the-zoo.md
+	│   └── project
+	│        └── building-a-tree-fort.md
+	│        └── xyz-1000.md
+	│
+ 	├── _index.md
+	├── about.md
+	└── contact.md
+
+TODO - adjust the above (and below) to match reality
+
 
 Customizations are in themes/hugo-smorg/layouts:
 
@@ -73,4 +87,3 @@ Run the compiler:
 	npm run scss
 	# produce production minified css
 	npm run scss-min
-

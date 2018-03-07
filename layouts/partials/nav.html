@@ -1,16 +1,20 @@
+{{ $currentPage := . }}
 <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
 	<div class="container">
 		<div class="navbar-brand">
-			<!--TODO move white-ter into css selector-->
 			<a class="navbar-item has-text-white-ter" href="/">{{ partial "logo.html" . }}</a>
-			<a class="navbar-item has-text-white-ter" href="/about/">About</a>
-			<a class="navbar-item has-text-white-ter" href="/contact/">Contact</a>
-		<!-- this rev has static menus -->
-		<!--<div class="navbar-burger">-->
-		  <!--<span></span>-->
-		  <!--<span></span>-->
-		  <!--<span></span>-->
-		<!--</div>-->
+			<div class="navbar-burger burger" data-target="navMenu">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		</div>
+		<div class="navbar-menu" id="navMenu">
+			{{ range .Site.Menus.sectionmenu }}
+				<a class="navbar-item {{if or ($currentPage.IsMenuCurrent "sectionmenu" .) ($currentPage.HasMenuCurrent "sectionmenu" .) }} is-active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+
+			{{ end }}
+			<!-- this rev has static menus -->
 		</div>
 	</div>
 </nav>

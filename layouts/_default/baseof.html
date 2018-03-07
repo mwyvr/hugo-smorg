@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+{{ partial "head.html" . }}
+<body>
+{{ partial "nav.html" . }}
+{{ block "main" . }}
+{{ end }}
+{{ block "footer" . }}
+{{ end }}
+{{ partial "js.html" . }}
+{{if eq .Kind "404" }}{{ partial "js404.html" . }}{{ end }}
+</body>
+</html>

@@ -1,0 +1,10 @@
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+		<p>{{ with .Site.Params.logotype }}{{ . | safeHTML }}
+		      {{ else }}{{ "Add params:footer" }}{{end}} 
+		   {{ with .Site.Params.footer }}{{ . | safeHTML }}
+		      {{ else }}{{ "Add params:footer" }}{{end}}</p>
+    </div>
+  </div>
+</footer>
