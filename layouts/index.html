@@ -1,6 +1,10 @@
+{{ define "nav" }}
+{{ partial "nav.html" . }}
+{{ end }}
 {{ define "main" }}
-<section class="section" itemscope itemtype="http://schema.org/WebPage">
-	<div class="container">
+<section class="section hero is-large" itemscope itemtype="http://schema.org/WebPage">
+	<div class="hero-head">
+		<div class="container">
 		<div class="columns">
 			<div class="column is-8 is-offset-2 has-text-centered">
 				<h1 class="title">{{ partial "logo.html" . }}</h1>
@@ -9,6 +13,7 @@
 				{{ .Content }}
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 </section>
