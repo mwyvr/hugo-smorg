@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch":		"node-sass --include-path node_modules --watch scss -o static/css",
+    "scss-watch-min":	"node-sass --include-path node_modules --output-style compressed --watch scss -o static/css",
     "scss":				"node-sass --include-path node_modules scss -o static/css",
     "scss-min":			"node-sass --include-path node_modules --output-style compressed scss/smorg.scss > static/css/smorg.min.css"
   },
