@@ -1,5 +1,5 @@
 ---
-title: READ ME
+title: Using the Theme
 menu: sectionmenu
 ---
 
