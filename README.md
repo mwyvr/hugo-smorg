@@ -10,11 +10,16 @@ I started this project to document how to use and customize Hugo as much for my 
 benefit as for anyone else, and I wanted to produce something that could be
 easily adapted (fonts, colours) or be extended.
 
+## TODO
+
+... a bunch of things; pagination next up.
+
 ## Features
 
 Hugo-smorg is buzzword compliant and more:
 
-* Mobile first (thanks [Builma][]!)
+* Easy to understand
+* Mobile first, thanks [Bulma][]!
 * Easy to apply a new colour "swatch" with [Bulmaswatch][]
 * Minimalistic in nature, easily made more, or less, complicated
 * Produces Atom syndication format with option to disable RSS; [details
