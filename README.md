@@ -1,30 +1,32 @@
 # hugo-smorg
-Responsive, minimalistic [Hugo](https://gohugo.io/) theme suitable for an individual or small organization.
 
-**Note**: May 2, 2018 - This is a work in progress; in the next day or so for
-a minimally working theme will be checked in; once functional I'll be adding
-capabilities over time.
+Created on March 1, 2018 this mobile-first, responsive, reasonably minimalistic [Hugo](https://gohugo.io/) theme suitable for an individual or small organization to adapt as need be.
+
+This theme will keep pace with current Hugo features.
 
 ## Motivation
 
-I've started this project to document how to use and customize Hugo as much for my own
-benefit, as well as provide a relatively easy to work with base to use as is or
-extend for new projects. This theme will keep pace with current Hugo features.
+I started this project to document how to use and customize Hugo as much for my own
+benefit as for anyone else, and I wanted to produce something that could be
+easily adapted (fonts, colours) or be extended.
 
 ## Features
 
-TODO: Complete feature list
+Hugo-smorg is buzzword compliant and more:
 
-Minimal design backed by capable CSS framework makes this easy to alter for
-your site.
-
-Outputs Atom syndication format with option to disable RSS; [details
+* Mobile first (thanks [Builma][]!)
+* Easy to apply a new colour "swatch" with [Bulmaswatch][]
+* Minimalistic in nature, easily made more, or less, complicated
+* Produces Atom syndication format with option to disable RSS; [details
 here](https://github.com/comfusion/after-dark/issues/32#issuecomment-312515542).
-
+* An ongoing work in progress, I'm using it as a base for other projects and am
+  motivated to keep this theme up with current Hugo features.
 
 ## Installation
 
 TODO: Complete installation note
+
+Quick start: Read this README plus the README in `exampleSite`.
 
 ### Adapting Hugo
 
@@ -69,8 +71,8 @@ Order](https://gohugo.io/templates/lookup-order/) for the details.
 ### CSS 
 
 hugo-smorg style relies upon:
-* Bulma: https://bulma.io/ and, optionally but included as an example,
-* Bulmaswatch: https://jenil.github.io/bulmaswatch/
+* [Bulma][]: https://bulma.io/ and, optionally but included as an example,
+* [Bulmaswatch][]: https://jenil.github.io/bulmaswatch/
 
 To modify the css introduce your own or override existing CSS classes within
 `scss/smorg.scss`.
@@ -87,3 +89,9 @@ Run the compiler:
 	npm run scss
 	# produce production minified css
 	npm run scss-min
+
+
+
+
+[Bulma]: https://bulma.io/ 
+[Bulmaswatch]: https://jenil.github.io/bulmaswatch/
