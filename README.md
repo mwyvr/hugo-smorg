@@ -10,9 +10,7 @@ I started this project to document how to use and customize Hugo as much for my 
 benefit as for anyone else, and I wanted to produce something that could be
 easily adapted (fonts, colours) or be extended.
 
-## TODO
-
-... a bunch of things; pagination next up.
+<img src="https://raw.githubusercontent.com/solutionroute/hugo-smorg/master/images/tn.png" width="900" height="600">
 
 ## Features
 
@@ -96,6 +94,9 @@ Run the compiler:
 	npm run scss-min
 
 
+## TODO
+
+... a bunch of things; pagination next up.
 
 
 [Bulma]: https://bulma.io/ 
