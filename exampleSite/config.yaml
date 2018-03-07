@@ -2,7 +2,7 @@
 #
 # Requires the Hugo static site generator. https://gohugo.io/
 
-baseURL: "http://yourwebsite.ca/"
+baseURL: "http://example.com/"
 languageCode: "en-us"
 title: "Hugo-smorg"
 theme: "hugo-smorg"
