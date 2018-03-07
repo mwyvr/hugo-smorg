@@ -11,8 +11,12 @@ March 2018: Responsive, minimalistic [Hugo](https://gohugo.io/) static site gene
 
 ### Desktop
 
+*Desktop - Blog (Post) Single Page*
+![Desktop - single page](../images/tn.png)
+
 *Desktop - Blog (Post) summaries*
 ![Desktop post summary](hugo-smorg-summary-desktop.png)
+
 
 ### Touch
 
