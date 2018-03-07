@@ -24,4 +24,4 @@ March 2018: Responsive, minimalistic [Hugo](https://gohugo.io/) static site gene
 <img src="hugo-smorg-landing-dropdown.png" width=600 height=582 alt="Mobile - Navigation menu active">
 
 *Mobile - Blog (Post) summaries*
-<img src="hugo-smorg-summary.png" width=600 height=891 alt="Mobile - Blog (Post) summaries">
+<img src="hugo-smorg-summary.png" width="50%" height="50%" alt="Mobile - Blog (Post) summaries">
