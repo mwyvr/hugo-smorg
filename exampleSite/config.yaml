@@ -16,7 +16,7 @@ summaryLength: 20
 
 # Access in templates via $.Site.Params.somevalue ------------------------
 params: 
-    debug: true
+    debug: false # inserts path to template used
     canonifyurls: true
     only_feed_summaries: true
     # _default/single.html, partials/footer.html
