@@ -2,7 +2,7 @@
 
 Project page: [github.com/solutionroute/hugo-smorg project](https://github.com/solutionroute/hugo-smorg) 
 
-March 2018: Responsive, minimalistic [Hugo](https://gohugo.io/) static site generator theme suitable for an individual or small organization.
+March 2018: Responsive, minimalistic Bulma-powered theme for the [Hugo](https://gohugo.io/) static site generator.
 
 ## Screenshots
 
@@ -18,10 +18,10 @@ March 2018: Responsive, minimalistic [Hugo](https://gohugo.io/) static site gene
 ### Touch
 
 *Mobile  - Landing page*
-<img src="hugo-smorg-landing.png" width=600 height=415 alt="Touch landing page">
+<img src="hugo-smorg-landing.png" width="50%" height="50%" alt="Touch landing page">
 
 *Mobile - Navigation menu active* 
-<img src="hugo-smorg-landing-dropdown.png" width=600 height=582 alt="Mobile - Navigation menu active">
+<img src="hugo-smorg-landing-dropdown.png" width="50%" height="50%" alt="Mobile - Navigation menu active">
 
 *Mobile - Blog (Post) summaries*
 <img src="hugo-smorg-summary.png" width="50%" height="50%" alt="Mobile - Blog (Post) summaries">
