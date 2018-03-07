@@ -2,13 +2,23 @@
 // See README.md for rebuild instructions.
 
 // Define default variables before importing Bulma
-@import 'bulmaswatch/sandstone/variables';
+//@import 'bulmaswatch/sandstone/variables';
+@import 'bulmaswatch/flatly/variables';
 
-// overide theme elements after theme variables but before bulma and theme overrides
+
+// TODO bulmaswatch has an @import for Lato font from Google Fonts at the head
+// of the theme's fairly significant _overrides.scss; submit a PR to pull that
+// and related variables into _fonts.scss.
+
+// monospace isn't imported, easy to change:
 $family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+// overide theme elements after theme variables but before bulma and theme overrides
 $body-size:16px; 
+$link: hsl(217, 71%,  53%);
 
-// import bulma and swatch 
+// import bulma 
 @import 'bulma/bulma';
-@import 'bulmaswatch/sandstone/overrides';
+// finally, import the swatch
+//@import 'bulmaswatch/sandstone/overrides';
+@import 'bulmaswatch/flatly/overrides';
 
