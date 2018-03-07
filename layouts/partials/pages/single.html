@@ -13,9 +13,9 @@
 						{{ partial "page-date.html" . }}
 						</p>
 					{{end}}
-					{{ if len .Params.tags }}
+					{{ with .Params.tags }}
 						<div class="subtitle tags is-6">{{ partial "page-tags.html" . }}</div>
-						{{ end }}
+					{{ end }}
 					{{ .Content }}
 				</article>
 			</div>
