@@ -1,24 +1,28 @@
 /*! hugo-smorg theme | github.com/solutionroute/hugo-smorg */
-// See README.md for rebuild instructions.
+// Packaged css and min.css included, see README.md for build instructions.
 
-// Define default variables before importing Bulma
-//@import 'bulmaswatch/sandstone/variables';
-@import 'bulmaswatch/flatly/variables';
-
-
-// TODO bulmaswatch has an @import for Lato font from Google Fonts at the head
-// of the theme's fairly significant _overrides.scss; submit a PR to pull that
-// and related variables into _fonts.scss.
-
-// monospace isn't imported, easy to change:
+// Flatly @imports Lato from Google Fonts.
+// monospace isn't imported, use system fonts:
 $family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
-// overide theme elements after theme variables but before bulma and theme overrides
+// overide theme elements after theme variables but before bulma 
 $body-size:16px; 
 $link: hsl(217, 71%,  53%);
+$background-color: black !important;
 
-// import bulma 
+// import bulma + bulmaswatch, order is important
+// 1. swatch variables
+// 2. bulma itself
+// 3. swatch overrides
+@import 'bulmaswatch/flatly/variables';
 @import 'bulma/bulma';
-// finally, import the swatch
-//@import 'bulmaswatch/sandstone/overrides';
 @import 'bulmaswatch/flatly/overrides';
+
+// Finally, any specific customizations for your site; these make
+// the footer background on short pages seem infinite
+html {
+	background-color: $white-ter !important;
+}
+body > section {
+	background-color: $white !important;
+}
 
