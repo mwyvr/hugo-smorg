@@ -5,6 +5,7 @@ linktitle: Creating a New Theme
 title: Creating a New Theme
 description: Michael Henderson explains how to create a simple 
              Hugo theme from scratch.
+tags: ['theme','hugo']
 weight: 10
 ---
 

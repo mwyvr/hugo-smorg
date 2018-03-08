@@ -22,8 +22,9 @@ Hugo-smorg is buzzword compliant and more:
 * Minimalistic in nature, easily made more, or less, complicated
 * Produces Atom syndication format with option to disable RSS; [details
 here](https://github.com/comfusion/after-dark/issues/32#issuecomment-312515542).
-* An ongoing work in progress, I'm using it as a base for other projects and am
-  motivated to keep this theme up with current Hugo features.
+* Tags on section page display; more work on taxonomy display coming soon.
+
+An ongoing work in progress, I'm using it as a base for other projects.
 
 ## Installation
 

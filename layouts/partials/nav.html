@@ -10,11 +10,12 @@
 			</div>
 		</div>
 		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-end">
 			{{ range .Site.Menus.sectionmenu }}
 				<a class="navbar-item {{if or ($currentPage.IsMenuCurrent "sectionmenu" .) ($currentPage.HasMenuCurrent "sectionmenu" .) }} is-active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
 
 			{{ end }}
-			<!-- this rev has static menus -->
+			</div>
 		</div>
 	</div>
 </nav>

@@ -2,14 +2,16 @@
 #
 # Requires the Hugo static site generator. https://gohugo.io/
 
-baseURL: "http://example.com/"
+baseURL: "http://www.example.com/"
 languageCode: "en-us"
 title: "Hugo-smorg"
-theme: "hugo-smorg"
+# theme: "hugo-smorg"
+# Following only for exampleSite
+theme: "../../../hugo-smorg"
 author: 
-    name: "Mike Watkins"
-    email: "mw@mikewatkins.ca"
-copyright: "(C) Mike Watkins"
+    name: "Your Name"
+    email: "youremail@noserverhere.example.com"
+copyright: "(C) Your Name"
 enableGitInfo: false
 summaryLength: 20
 
