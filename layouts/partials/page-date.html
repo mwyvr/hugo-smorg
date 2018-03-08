@@ -1,5 +1,5 @@
 {{ if .Params.updated }}
 <time datetime="{{ dateFormat "2006-01-02" .Params.updated }}">{{ dateFormat "Monday 2 January, 2006"  .Params.updated }}</time> 
 {{else}}
-<time datetime="{{ .Date.Format "2006-01-02"}} pubdate">{{ .Date.Format "Monday 2 January, 2006" }}</time>
+<time datetime="{{ .Date.Format "2006-01-02"}}">{{ .Date.Format "Monday 2 January, 2006" }}</time>
 {{end}}
