@@ -9,7 +9,7 @@ March 2018: Responsive, minimalistic Bulma-powered theme for the [Hugo](https://
 ### Desktop
 
 *Desktop - Blog (Post) Single Page*
-![Desktop - single page](../images/tn.png)
+![Desktop - single page](https://github.com/solutionroute/hugo-smorg/raw/master/images/tn.png)
 
 *Desktop - Blog (Post) summaries*
 ![Desktop post summary](hugo-smorg-summary-desktop.png)
