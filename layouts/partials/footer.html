@@ -1,10 +1,13 @@
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
+  <div class="container content">
+	<div class="has-text-centered">
 		<p>{{ with .Site.Params.logotype }}{{ . | safeHTML }}
-		      {{ else }}{{ "Add params:footer" }}{{end}} 
+			  {{ else }}{{ "Add params:logotype" }}{{end}} 
 		   {{ with .Site.Params.footer }}{{ . | safeHTML }}
-		      {{ else }}{{ "Add params:footer" }}{{end}}</p>
-    </div>
+			  {{ else }}{{ "Add params:footer" }}{{end}}</p>
+		<hr>
+		<p class="has-text-grey is-size-7">{{ .Site.Copyright | markdownify }}</p>
+	</div>
   </div>
 </footer>
+
