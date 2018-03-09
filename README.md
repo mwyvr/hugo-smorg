@@ -99,6 +99,9 @@ Run the compiler:
 
 ... a bunch of things; pagination next up.
 
+TODO bulmaswatch has an @import for Lato font from Google Fonts at the head
+of the theme's fairly significant _overrides.scss; submit a PR to pull that and
+related variables into _fonts.scss.
 
 [Bulma]: https://bulma.io/ 
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
