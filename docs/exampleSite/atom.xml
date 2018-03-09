@@ -1,0 +1,82 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>hugo-smorg on Hugo-smorg</title>
+  <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/feed/atom.xml" rel="self"/>
+  <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/"/>
+  <updated>2018-03-01T00:00:00+00:00</updated>
+  <id>https://solutionroute.github.io/hugo-smorg/exampleSite/</id>
+  <author>
+    <name>Your Name</name>
+    <email>youremail@noserverhere.example.com</email>
+  </author>
+  <generator>Hugo -- gohugo.io</generator>
+  <entry>
+	<title>About</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</id>
+    <published>2014-04-09T00:00:00+00:00</published>
+    <updated>2014-04-09T00:00:00+00:00</updated>
+	<content type="html"><![CDATA[Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:]]></content>
+  </entry>
+  <entry>
+	<title>Creating a New Theme</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</id>
+    <published>2014-09-28T00:00:00+00:00</published>
+    <updated>2014-09-28T00:00:00+00:00</updated>
+	<content type="html"><![CDATA[Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content.]]></content>
+  </entry>
+  <entry>
+	<title>Migrate to Hugo from Jekyll</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</id>
+    <published>2014-03-10T00:00:00+00:00</published>
+    <updated>2014-03-10T00:00:00+00:00</updated>
+	<content type="html"><![CDATA[Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output.]]></content>
+  </entry>
+  <entry>
+	<title>Hugo Bulma Powered Blog Theme: Hugo-Smorg</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/project/hugo-smorg/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/project/hugo-smorg/</id>
+    <published>2018-03-07T02:16:58-08:00</published>
+    <updated>2018-03-07T02:16:58-08:00</updated>
+	<content type="html"><![CDATA[<p><a href="https://github.com/solutionroute/hugo-smorg">Hugo-smorg</a> (smorg = small org, or smorgasbord perhaps) is a responsive
+mobile-first, <a href="https://bulma.io/">Bulma</a>-powered, reasonably minimalistic theme for the <a href="https://gohugo.io/">Hugo</a>
+<a href="https://gohugo.io/">https://gohugo.io/</a> static site generator.<br />
+</p>]]></content>
+  </entry>
+  <entry>
+	<title>Blorg Bread Baker</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/project/blorg-bread-machine/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/project/blorg-bread-machine/</id>
+    <published>2018-03-03T09:17:17-08:00</published>
+    <updated>2018-03-03T09:17:17-08:00</updated>
+	<content type="html"><![CDATA[The hand-crafted Blorg Bread Baker&trade; enhances any kitchen. Produced from 100% post-consumer recycled materials you&rsquo;ll never once think&hellip; wait a minute, I&rsquo;m baking my bread in other people&rsquo;s refuse.]]></content>
+  </entry>
+  <entry>
+	<title>XYZ 1000 Replicator</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/project/xyz-1000/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/project/xyz-1000/</id>
+    <published>2018-02-01T00:00:00-08:00</published>
+    <updated>2018-02-01T00:00:00-08:00</updated>
+	<content type="html"><![CDATA[With the XYZ 1000 Replicator you&rsquo;ll never again be stuck with an empty kitchen and nothing for dinner!
+Features  It&rsquo;s like a chef from 1,783,482,482 (and counting) planets in your kitchen!]]></content>
+  </entry>
+  <entry>
+	<title>(Hu)go Template Primer</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/goisforlovers/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/post/goisforlovers/</id>
+    <published>2014-04-02T00:00:00+00:00</published>
+    <updated>2014-04-02T00:00:00+00:00</updated>
+	<content type="html"><![CDATA[Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic.]]></content>
+  </entry>
+  <entry>
+	<title>Getting Started with Hugo</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/hugoisforlovers/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/post/hugoisforlovers/</id>
+    <published>2014-04-02T00:00:00+00:00</published>
+    <updated>2014-04-02T00:00:00+00:00</updated>
+	<content type="html"><![CDATA[Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.]]></content>
+  </entry>
+</feed>
