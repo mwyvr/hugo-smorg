@@ -14,12 +14,12 @@ author:
 copyright: "(C) Your Name"
 enableGitInfo: false
 summaryLength: 20
+canonifyurls: true
 
 
 # Access in templates via $.Site.Params.somevalue ------------------------
 params: 
     debug: false # inserts path to template used
-    canonifyurls: true
     only_feed_summaries: true
     # _default/single.html, partials/footer.html
     fullname: "Your Full Or Organization Name"		
@@ -29,7 +29,7 @@ params:
     # used in partials nav.html and footer.
     logotype: '<span class="has-text-weight-bold">hugo
               <span class="has-text-danger">smorg</span></span>' 
-    footer: 'an open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>'
+    footer: 'An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>'
 
 # Primary Navigation Menu (partials/nav.html) ----------------------------
 # Our menu exploses About, Projects and Blog
