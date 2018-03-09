@@ -4,16 +4,15 @@
 // Flatly @imports Lato from Google Fonts.
 // monospace isn't imported, use system fonts:
 $family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
-// overide theme elements after theme variables but before bulma 
-$body-size:16px; 
-$link: hsl(217, 71%,  53%);
-$background-color: black !important;
-
 // import bulma + bulmaswatch, order is important
 // 1. swatch variables
 // 2. bulma itself
 // 3. swatch overrides
 @import 'bulmaswatch/flatly/variables';
+// overide theme elements after theme variables but before bulma 
+$body-size:16px; 
+$link: hsl(217, 71%,  53%);
+
 @import 'bulma/bulma';
 @import 'bulmaswatch/flatly/overrides';
 
@@ -24,5 +23,9 @@ html {
 }
 body > section {
 	background-color: $white !important;
+}
+
+body > section.section.hero {
+	padding: 0px !important;
 }
 
