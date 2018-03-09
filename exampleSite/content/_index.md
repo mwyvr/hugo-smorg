@@ -13,6 +13,8 @@ Visit
 [github.com/solutionroute/hugo-smorg](https://github.com/solutionroute/hugo-smorg)
 to grab or fork this theme.
 
+**[Demo site](https://solutionroute.github.io/hugo-smorg/exampleSite/)**
+
 [Hugo-smorg]: https://github.com/solutionroute/hugo-smorg
 [Bulma]: https://bulma.io/
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
