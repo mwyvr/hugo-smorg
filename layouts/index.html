@@ -1,9 +1,9 @@
-{{ define "nav" }}
-{{ partial "nav.html" . }}
-{{ end }}
 {{ define "main" }}
 <section class="section hero is-large" itemscope itemtype="http://schema.org/WebPage">
 	<div class="hero-head">
+	{{ partial "nav.html" . }}
+	</div>
+	<div class="hero-body">
 		<div class="container">
 		<div class="columns">
 			<div class="column is-8 is-offset-2 has-text-centered">
