@@ -4,6 +4,8 @@ This is a responsive mobile-first [Bulma][]-powered, reasonably minimalistic [Hu
 
 This theme will keep pace with current Hugo features.
 
+**[Demo site](https://solutionroute.github.io/hugo-smorg/exampleSite/)**
+
 ## Motivation
 
 I started this project to document how to use and customize Hugo as much for my own
