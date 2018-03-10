@@ -15,6 +15,9 @@ copyright: "(C) Your Name"
 enableGitInfo: false
 summaryLength: 20
 canonifyurls: true
+pygmentsUseClasses: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsCodefences: true
 
 
 # Access in templates via $.Site.Params.somevalue ------------------------
@@ -27,9 +30,9 @@ params:
                   your site's purpose."
     # Further customize logo in partials/logo.html; 
     # used in partials nav.html and footer.
-    logotype: '<span class="has-text-weight-bold">hugo
-              <span class="has-text-danger">smorg</span></span>' 
-    footer: 'An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>'
+    logotype: '<span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span>' 
+    footer: 'An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>
+    <br><i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>'
 
 # Primary Navigation Menu (partials/nav.html) ----------------------------
 # Our menu exploses About, Projects and Blog

@@ -4,16 +4,9 @@ draft: false
 title: hugo-smorg
 ---
 
-[Hugo-smorg][] is a theme for [Hugo](https://gohugo.io/), a fast and flexible static site engine written in Go. 
-
-This theme incorporates [Bulma][], a capable and easy to use responsive CSS framework and
-[Bulmaswatch][] theme customizations for Bulma.  
-
-Visit
-[github.com/solutionroute/hugo-smorg](https://github.com/solutionroute/hugo-smorg)
-to grab or fork this theme.
-
-**[Demo site](https://solutionroute.github.io/hugo-smorg/exampleSite/)**
+[Hugo-smorg][] is an open source theme for [Hugo](https://gohugo.io/), the fast
+and flexible static site engine written in Go. The theme incorporates
+[Bulma][], a responsive CSS framework and [Bulmaswatch][] theme customizations.
 
 [Hugo-smorg]: https://github.com/solutionroute/hugo-smorg
 [Bulma]: https://bulma.io/
