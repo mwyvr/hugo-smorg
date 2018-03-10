@@ -12,5 +12,8 @@ Project page: [github.com/solutionroute/hugo-smorg project](https://github.com/s
 ![Desktop - single page](https://github.com/solutionroute/hugo-smorg/raw/master/images/tn.png)
 
 **Desktop - Authors Landing Page** 
-![Desktop - single page](altlanding-tn.png)
+
+A few lines of CSS and one tweak to a single template:
+
+![Desktop - single page](altlanding-tn.jpg)
 
