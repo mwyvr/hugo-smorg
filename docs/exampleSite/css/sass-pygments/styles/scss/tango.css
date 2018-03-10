@@ -1,0 +1,184 @@
+.syntax {
+  background: #f8f8f8; }
+  .syntax .hll {
+    background-color: #ffffcc; }
+  .syntax .c {
+    color: #8f5902;
+    font-style: italic; }
+  .syntax .err {
+    color: #a40000;
+    border: 1px solid #ef2929; }
+  .syntax .g {
+    color: #000000; }
+  .syntax .k {
+    color: #204a87;
+    font-weight: bold; }
+  .syntax .l, .syntax .n {
+    color: #000000; }
+  .syntax .o {
+    color: #ce5c00;
+    font-weight: bold; }
+  .syntax .x {
+    color: #000000; }
+  .syntax .p {
+    color: #000000;
+    font-weight: bold; }
+  .syntax .ch, .syntax .cm, .syntax .cp, .syntax .cpf, .syntax .c1, .syntax .cs {
+    color: #8f5902;
+    font-style: italic; }
+  .syntax .gd {
+    color: #a40000; }
+  .syntax .ge {
+    color: #000000;
+    font-style: italic; }
+  .syntax .gr {
+    color: #ef2929; }
+  .syntax .gh {
+    color: #000080;
+    font-weight: bold; }
+  .syntax .gi {
+    color: #00A000; }
+  .syntax .go {
+    color: #000000;
+    font-style: italic; }
+  .syntax .gp {
+    color: #8f5902; }
+  .syntax .gs {
+    color: #000000;
+    font-weight: bold; }
+  .syntax .gu {
+    color: #800080;
+    font-weight: bold; }
+  .syntax .gt {
+    color: #a40000;
+    font-weight: bold; }
+  .syntax .kc, .syntax .kd, .syntax .kn, .syntax .kp, .syntax .kr, .syntax .kt {
+    color: #204a87;
+    font-weight: bold; }
+  .syntax .ld {
+    color: #000000; }
+  .syntax .m {
+    color: #0000cf;
+    font-weight: bold; }
+  .syntax .s {
+    color: #4e9a06; }
+  .syntax .na {
+    color: #c4a000; }
+  .syntax .nb {
+    color: #204a87; }
+  .syntax .nc, .syntax .no {
+    color: #000000; }
+  .syntax .nd {
+    color: #5c35cc;
+    font-weight: bold; }
+  .syntax .ni {
+    color: #ce5c00; }
+  .syntax .ne {
+    color: #cc0000;
+    font-weight: bold; }
+  .syntax .nf {
+    color: #000000; }
+  .syntax .nl {
+    color: #f57900; }
+  .syntax .nn, .syntax .nx, .syntax .py {
+    color: #000000; }
+  .syntax .nt {
+    color: #204a87;
+    font-weight: bold; }
+  .syntax .nv {
+    color: #000000; }
+  .syntax .ow {
+    color: #204a87;
+    font-weight: bold; }
+  .syntax .w {
+    color: #f8f8f8;
+    text-decoration: underline; }
+  .syntax .mb, .syntax .mf, .syntax .mh, .syntax .mi, .syntax .mo {
+    color: #0000cf;
+    font-weight: bold; }
+  .syntax .sb, .syntax .sc {
+    color: #4e9a06; }
+  .syntax .sd {
+    color: #8f5902;
+    font-style: italic; }
+  .syntax .s2, .syntax .se, .syntax .sh, .syntax .si, .syntax .sx, .syntax .sr, .syntax .s1, .syntax .ss {
+    color: #4e9a06; }
+  .syntax .bp {
+    color: #3465a4; }
+  .syntax .vc, .syntax .vg, .syntax .vi {
+    color: #000000; }
+  .syntax .il {
+    color: #0000cf;
+    font-weight: bold; }
+
+/* Comment */
+/* Error */
+/* Generic */
+/* Keyword */
+/* Literal */
+/* Name */
+/* Operator */
+/* Other */
+/* Punctuation */
+/* Comment.Hashbang */
+/* Comment.Multiline */
+/* Comment.Preproc */
+/* Comment.PreprocFile */
+/* Comment.Single */
+/* Comment.Special */
+/* Generic.Deleted */
+/* Generic.Emph */
+/* Generic.Error */
+/* Generic.Heading */
+/* Generic.Inserted */
+/* Generic.Output */
+/* Generic.Prompt */
+/* Generic.Strong */
+/* Generic.Subheading */
+/* Generic.Traceback */
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Namespace */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+/* Keyword.Type */
+/* Literal.Date */
+/* Literal.Number */
+/* Literal.String */
+/* Name.Attribute */
+/* Name.Builtin */
+/* Name.Class */
+/* Name.Constant */
+/* Name.Decorator */
+/* Name.Entity */
+/* Name.Exception */
+/* Name.Function */
+/* Name.Label */
+/* Name.Namespace */
+/* Name.Other */
+/* Name.Property */
+/* Name.Tag */
+/* Name.Variable */
+/* Operator.Word */
+/* Text.Whitespace */
+/* Literal.Number.Bin */
+/* Literal.Number.Float */
+/* Literal.Number.Hex */
+/* Literal.Number.Integer */
+/* Literal.Number.Oct */
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* Literal.String.Escape */
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */
+/* Name.Builtin.Pseudo */
+/* Name.Variable.Class */
+/* Name.Variable.Global */
+/* Name.Variable.Instance */
+/* Literal.Number.Integer.Long */

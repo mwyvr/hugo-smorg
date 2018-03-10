@@ -1,0 +1,54 @@
+.syntax {
+  background: #ffffff; }
+  .syntax .hll {
+    background-color: #ffffcc; }
+  .syntax .c {
+    color: #FF0000;
+    font-style: italic; }
+  .syntax .k {
+    color: #0000FF; }
+  .syntax .ch, .syntax .cm, .syntax .cp, .syntax .cpf, .syntax .c1, .syntax .cs {
+    color: #FF0000;
+    font-style: italic; }
+  .syntax .kc, .syntax .kd, .syntax .kn, .syntax .kp, .syntax .kr, .syntax .kt {
+    color: #0000FF; }
+  .syntax .s {
+    color: #009C00; }
+  .syntax .nc {
+    color: #007575; }
+  .syntax .nd {
+    color: #CC00A3; }
+  .syntax .nf {
+    color: #C34E00; }
+  .syntax .sb, .syntax .sc, .syntax .sd, .syntax .s2, .syntax .se, .syntax .sh, .syntax .si, .syntax .sx, .syntax .sr, .syntax .s1, .syntax .ss {
+    color: #009C00; }
+
+/* Comment */
+/* Keyword */
+/* Comment.Hashbang */
+/* Comment.Multiline */
+/* Comment.Preproc */
+/* Comment.PreprocFile */
+/* Comment.Single */
+/* Comment.Special */
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Namespace */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+/* Keyword.Type */
+/* Literal.String */
+/* Name.Class */
+/* Name.Decorator */
+/* Name.Function */
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* Literal.String.Escape */
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */

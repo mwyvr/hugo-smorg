@@ -1,0 +1,136 @@
+.syntax {
+  background: #eee8d5;
+  color: #586e75; }
+  .syntax .hll {
+    background-color: #ffffcc; }
+  .syntax .c {
+    color: #93a1a1;
+    font-style: italic; }
+  .syntax .g {
+    color: #d33682; }
+  .syntax .k {
+    color: #859900; }
+  .syntax .l {
+    color: #2aa198; }
+  .syntax .n {
+    color: #268bd2; }
+  .syntax .ch, .syntax .cm, .syntax .cp, .syntax .cpf, .syntax .c1, .syntax .cs {
+    color: #93a1a1;
+    font-style: italic; }
+  .syntax .gd, .syntax .ge, .syntax .gr, .syntax .gh, .syntax .gi, .syntax .go, .syntax .gp, .syntax .gs, .syntax .gu, .syntax .gt {
+    color: #d33682; }
+  .syntax .kc {
+    color: #859900;
+    font-weight: bold; }
+  .syntax .kd {
+    color: #859900; }
+  .syntax .kn {
+    color: #dc322f;
+    font-weight: bold; }
+  .syntax .kp, .syntax .kr {
+    color: #859900; }
+  .syntax .kt {
+    color: #859900;
+    font-weight: bold; }
+  .syntax .ld {
+    color: #2aa198; }
+  .syntax .m {
+    color: #2aa198;
+    font-weight: bold; }
+  .syntax .s {
+    color: #2aa198; }
+  .syntax .na {
+    color: #268bd2; }
+  .syntax .nb, .syntax .nc {
+    color: #cb4b16; }
+  .syntax .no, .syntax .nd, .syntax .ni, .syntax .ne, .syntax .nf, .syntax .nl, .syntax .nn, .syntax .nx, .syntax .py {
+    color: #268bd2; }
+  .syntax .nt {
+    color: #268bd2;
+    font-weight: bold; }
+  .syntax .nv {
+    color: #268bd2; }
+  .syntax .ow {
+    color: #859900; }
+  .syntax .w {
+    color: #586e75; }
+  .syntax .mb, .syntax .mf, .syntax .mh, .syntax .mi, .syntax .mo {
+    color: #2aa198;
+    font-weight: bold; }
+  .syntax .sb, .syntax .sc, .syntax .sd, .syntax .s2, .syntax .se, .syntax .sh, .syntax .si, .syntax .sx, .syntax .sr, .syntax .s1, .syntax .ss {
+    color: #2aa198; }
+  .syntax .bp {
+    color: #cb4b16; }
+  .syntax .vc, .syntax .vg, .syntax .vi {
+    color: #268bd2; }
+  .syntax .il {
+    color: #2aa198;
+    font-weight: bold; }
+
+/* Comment */
+/* Generic */
+/* Keyword */
+/* Literal */
+/* Name */
+/* Comment.Hashbang */
+/* Comment.Multiline */
+/* Comment.Preproc */
+/* Comment.PreprocFile */
+/* Comment.Single */
+/* Comment.Special */
+/* Generic.Deleted */
+/* Generic.Emph */
+/* Generic.Error */
+/* Generic.Heading */
+/* Generic.Inserted */
+/* Generic.Output */
+/* Generic.Prompt */
+/* Generic.Strong */
+/* Generic.Subheading */
+/* Generic.Traceback */
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Namespace */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+/* Keyword.Type */
+/* Literal.Date */
+/* Literal.Number */
+/* Literal.String */
+/* Name.Attribute */
+/* Name.Builtin */
+/* Name.Class */
+/* Name.Constant */
+/* Name.Decorator */
+/* Name.Entity */
+/* Name.Exception */
+/* Name.Function */
+/* Name.Label */
+/* Name.Namespace */
+/* Name.Other */
+/* Name.Property */
+/* Name.Tag */
+/* Name.Variable */
+/* Operator.Word */
+/* Text.Whitespace */
+/* Literal.Number.Bin */
+/* Literal.Number.Float */
+/* Literal.Number.Hex */
+/* Literal.Number.Integer */
+/* Literal.Number.Oct */
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* Literal.String.Escape */
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */
+/* Name.Builtin.Pseudo */
+/* Name.Variable.Class */
+/* Name.Variable.Global */
+/* Name.Variable.Instance */
+/* Literal.Number.Integer.Long */

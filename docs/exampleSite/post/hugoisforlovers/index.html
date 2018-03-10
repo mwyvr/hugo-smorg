@@ -19,10 +19,10 @@
 <body>
 
 
-<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+<nav class="navbar is-primary" aria-label="main navigation">
 	<div class="container">
 		<div class="navbar-brand">
-			<a class="navbar-item has-text-white-ter" href="https://solutionroute.github.io/hugo-smorg/exampleSite/"><span class="has-text-weight-bold"><span class="has-text-weight-bold">hugo <span class="has-text-danger">smorg</span></span></span>
+			<a class="navbar-item has-text-white-ter" href="https://solutionroute.github.io/hugo-smorg/exampleSite/"><span class="has-text-weight-bold"><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span></span>
 </a>
 			<div class="navbar-burger burger" data-target="navMenu">
 			  <span></span>
@@ -102,17 +102,14 @@ you are reading right now.</p>
 </ol>
 
 <p>Corresponding pseudo commands:</p>
-
-<pre><code>git clone https://github.com/spf13/hugo
+<div class="highlight"><pre class="chroma">git clone https://github.com/spf13/hugo
 cd hugo
 /path/to/where/you/installed/hugo server --source=./docs
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 27 ms
 &gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre>
-
+&gt; Press ctrl+c to stop</pre></div>
 <p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
 
 <h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
@@ -120,16 +117,13 @@ cd hugo
 <p>Stop the Hugo process by hitting ctrl+c.</p>
 
 <p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+<div class="highlight"><pre class="chroma">/path/to/hugo/from/step/1/hugo server --source=./docs --watch
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 27 ms
 &gt; Web Server is available at http://localhost:1313
 &gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
-
+&gt; Press ctrl+c to stop</pre></div>
 <p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
 content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
 
@@ -138,14 +132,11 @@ are located at the same relative location as the url, in our case
 <code>docs/content/overview/quickstart.md</code>.</p>
 
 <p>Change and save this file.. Notice what happened in your terminal.</p>
-
-<pre><code>&gt; Change detected, rebuilding site
+<div class="highlight"><pre class="chroma">&gt; Change detected, rebuilding site
 
 &gt; 29 pages created
 &gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-
+&gt; in 26 ms</pre></div>
 <p>Refresh the browser and observe that the typo is now fixed.</p>
 
 <p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
@@ -165,9 +156,9 @@ Having nearly instant feedback enables you to have your creativity flow without 
 <footer class="footer">
   <div class="container content">
 	<div class="has-text-centered">
-		<p><span class="has-text-weight-bold">hugo <span class="has-text-danger">smorg</span></span>
+		<p><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span>
 			   
-		   An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>
+		   An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a> <br><i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>
 			  </p>
 		<hr>
 		<p class="has-text-grey is-size-7">&copy; Your Name</p>
@@ -178,7 +169,7 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<script type="text/javascript">
+<script>
 document.addEventListener('DOMContentLoaded', function () {
   var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   if ($navbarBurgers.length > 0) {

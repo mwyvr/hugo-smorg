@@ -1,0 +1,183 @@
+.syntax {
+  background: #ffffff; }
+  .syntax .hll {
+    background-color: #ffffcc; }
+  .syntax .c {
+    color: #888888;
+    font-style: italic; }
+  .syntax .err {
+    background-color: #a848a8; }
+  .syntax .k {
+    color: #2838b0; }
+  .syntax .o {
+    color: #666666; }
+  .syntax .p {
+    color: #888888; }
+  .syntax .ch {
+    color: #287088;
+    font-style: italic; }
+  .syntax .cm {
+    color: #888888;
+    font-style: italic; }
+  .syntax .cp {
+    color: #289870; }
+  .syntax .cpf, .syntax .c1, .syntax .cs {
+    color: #888888;
+    font-style: italic; }
+  .syntax .gd {
+    color: #c02828; }
+  .syntax .ge {
+    font-style: italic; }
+  .syntax .gr {
+    color: #c02828; }
+  .syntax .gh {
+    color: #666666; }
+  .syntax .gi {
+    color: #388038; }
+  .syntax .go {
+    color: #666666; }
+  .syntax .gp {
+    color: #444444; }
+  .syntax .gs {
+    font-weight: bold; }
+  .syntax .gu {
+    color: #444444; }
+  .syntax .gt {
+    color: #2838b0; }
+  .syntax .kc {
+    color: #444444;
+    font-style: italic; }
+  .syntax .kd {
+    color: #2838b0;
+    font-style: italic; }
+  .syntax .kn, .syntax .kp, .syntax .kr {
+    color: #2838b0; }
+  .syntax .kt {
+    color: #2838b0;
+    font-style: italic; }
+  .syntax .m {
+    color: #444444; }
+  .syntax .s {
+    color: #b83838; }
+  .syntax .na, .syntax .nb {
+    color: #388038; }
+  .syntax .nc {
+    color: #287088; }
+  .syntax .no {
+    color: #b85820; }
+  .syntax .nd {
+    color: #287088; }
+  .syntax .ni {
+    color: #709030; }
+  .syntax .ne {
+    color: #908828; }
+  .syntax .nf {
+    color: #785840; }
+  .syntax .nl, .syntax .nn {
+    color: #289870; }
+  .syntax .nt {
+    color: #2838b0; }
+  .syntax .nv {
+    color: #b04040; }
+  .syntax .ow {
+    color: #a848a8; }
+  .syntax .w {
+    color: #a89028; }
+  .syntax .mb, .syntax .mf, .syntax .mh, .syntax .mi, .syntax .mo {
+    color: #444444; }
+  .syntax .sb {
+    color: #b83838; }
+  .syntax .sc {
+    color: #a848a8; }
+  .syntax .sd {
+    color: #b85820;
+    font-style: italic; }
+  .syntax .s2 {
+    color: #b83838; }
+  .syntax .se {
+    color: #709030; }
+  .syntax .sh {
+    color: #b83838; }
+  .syntax .si {
+    color: #b83838;
+    text-decoration: underline; }
+  .syntax .sx, .syntax .sr {
+    color: #a848a8; }
+  .syntax .s1, .syntax .ss {
+    color: #b83838; }
+  .syntax .bp {
+    color: #388038;
+    font-style: italic; }
+  .syntax .vc {
+    color: #b04040; }
+  .syntax .vg {
+    color: #908828; }
+  .syntax .vi {
+    color: #b04040; }
+  .syntax .il {
+    color: #444444; }
+
+/* Comment */
+/* Error */
+/* Keyword */
+/* Operator */
+/* Punctuation */
+/* Comment.Hashbang */
+/* Comment.Multiline */
+/* Comment.Preproc */
+/* Comment.PreprocFile */
+/* Comment.Single */
+/* Comment.Special */
+/* Generic.Deleted */
+/* Generic.Emph */
+/* Generic.Error */
+/* Generic.Heading */
+/* Generic.Inserted */
+/* Generic.Output */
+/* Generic.Prompt */
+/* Generic.Strong */
+/* Generic.Subheading */
+/* Generic.Traceback */
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Namespace */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+/* Keyword.Type */
+/* Literal.Number */
+/* Literal.String */
+/* Name.Attribute */
+/* Name.Builtin */
+/* Name.Class */
+/* Name.Constant */
+/* Name.Decorator */
+/* Name.Entity */
+/* Name.Exception */
+/* Name.Function */
+/* Name.Label */
+/* Name.Namespace */
+/* Name.Tag */
+/* Name.Variable */
+/* Operator.Word */
+/* Text.Whitespace */
+/* Literal.Number.Bin */
+/* Literal.Number.Float */
+/* Literal.Number.Hex */
+/* Literal.Number.Integer */
+/* Literal.Number.Oct */
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* Literal.String.Escape */
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */
+/* Name.Builtin.Pseudo */
+/* Name.Variable.Class */
+/* Name.Variable.Global */
+/* Name.Variable.Instance */
+/* Literal.Number.Integer.Long */

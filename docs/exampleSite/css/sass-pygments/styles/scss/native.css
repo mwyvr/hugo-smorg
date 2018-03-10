@@ -1,0 +1,190 @@
+.syntax {
+  background: #202020;
+  color: #d0d0d0; }
+  .syntax .hll {
+    background-color: #404040; }
+  .syntax .c {
+    color: #999999;
+    font-style: italic; }
+  .syntax .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .syntax .esc, .syntax .g {
+    color: #d0d0d0; }
+  .syntax .k {
+    color: #6ab825;
+    font-weight: bold; }
+  .syntax .l, .syntax .n, .syntax .o, .syntax .x, .syntax .p {
+    color: #d0d0d0; }
+  .syntax .ch, .syntax .cm {
+    color: #999999;
+    font-style: italic; }
+  .syntax .cp {
+    color: #cd2828;
+    font-weight: bold; }
+  .syntax .cpf, .syntax .c1 {
+    color: #999999;
+    font-style: italic; }
+  .syntax .cs {
+    color: #e50808;
+    font-weight: bold;
+    background-color: #520000; }
+  .syntax .gd {
+    color: #d22323; }
+  .syntax .ge {
+    color: #d0d0d0;
+    font-style: italic; }
+  .syntax .gr {
+    color: #d22323; }
+  .syntax .gh {
+    color: #ffffff;
+    font-weight: bold; }
+  .syntax .gi {
+    color: #589819; }
+  .syntax .go {
+    color: #cccccc; }
+  .syntax .gp {
+    color: #aaaaaa; }
+  .syntax .gs {
+    color: #d0d0d0;
+    font-weight: bold; }
+  .syntax .gu {
+    color: #ffffff;
+    text-decoration: underline; }
+  .syntax .gt {
+    color: #d22323; }
+  .syntax .kc, .syntax .kd, .syntax .kn {
+    color: #6ab825;
+    font-weight: bold; }
+  .syntax .kp {
+    color: #6ab825; }
+  .syntax .kr, .syntax .kt {
+    color: #6ab825;
+    font-weight: bold; }
+  .syntax .ld {
+    color: #d0d0d0; }
+  .syntax .m {
+    color: #3677a9; }
+  .syntax .s {
+    color: #ed9d13; }
+  .syntax .na {
+    color: #bbbbbb; }
+  .syntax .nb {
+    color: #24909d; }
+  .syntax .nc {
+    color: #447fcf;
+    text-decoration: underline; }
+  .syntax .no {
+    color: #40ffff; }
+  .syntax .nd {
+    color: #ffa500; }
+  .syntax .ni {
+    color: #d0d0d0; }
+  .syntax .ne {
+    color: #bbbbbb; }
+  .syntax .nf {
+    color: #447fcf; }
+  .syntax .nl {
+    color: #d0d0d0; }
+  .syntax .nn {
+    color: #447fcf;
+    text-decoration: underline; }
+  .syntax .nx, .syntax .py {
+    color: #d0d0d0; }
+  .syntax .nt {
+    color: #6ab825;
+    font-weight: bold; }
+  .syntax .nv {
+    color: #40ffff; }
+  .syntax .ow {
+    color: #6ab825;
+    font-weight: bold; }
+  .syntax .w {
+    color: #666666; }
+  .syntax .mb, .syntax .mf, .syntax .mh, .syntax .mi, .syntax .mo {
+    color: #3677a9; }
+  .syntax .sb, .syntax .sc, .syntax .sd, .syntax .s2, .syntax .se, .syntax .sh, .syntax .si {
+    color: #ed9d13; }
+  .syntax .sx {
+    color: #ffa500; }
+  .syntax .sr, .syntax .s1, .syntax .ss {
+    color: #ed9d13; }
+  .syntax .bp {
+    color: #24909d; }
+  .syntax .vc, .syntax .vg, .syntax .vi {
+    color: #40ffff; }
+  .syntax .il {
+    color: #3677a9; }
+
+/* Comment */
+/* Error */
+/* Escape */
+/* Generic */
+/* Keyword */
+/* Literal */
+/* Name */
+/* Operator */
+/* Other */
+/* Punctuation */
+/* Comment.Hashbang */
+/* Comment.Multiline */
+/* Comment.Preproc */
+/* Comment.PreprocFile */
+/* Comment.Single */
+/* Comment.Special */
+/* Generic.Deleted */
+/* Generic.Emph */
+/* Generic.Error */
+/* Generic.Heading */
+/* Generic.Inserted */
+/* Generic.Output */
+/* Generic.Prompt */
+/* Generic.Strong */
+/* Generic.Subheading */
+/* Generic.Traceback */
+/* Keyword.Constant */
+/* Keyword.Declaration */
+/* Keyword.Namespace */
+/* Keyword.Pseudo */
+/* Keyword.Reserved */
+/* Keyword.Type */
+/* Literal.Date */
+/* Literal.Number */
+/* Literal.String */
+/* Name.Attribute */
+/* Name.Builtin */
+/* Name.Class */
+/* Name.Constant */
+/* Name.Decorator */
+/* Name.Entity */
+/* Name.Exception */
+/* Name.Function */
+/* Name.Label */
+/* Name.Namespace */
+/* Name.Other */
+/* Name.Property */
+/* Name.Tag */
+/* Name.Variable */
+/* Operator.Word */
+/* Text.Whitespace */
+/* Literal.Number.Bin */
+/* Literal.Number.Float */
+/* Literal.Number.Hex */
+/* Literal.Number.Integer */
+/* Literal.Number.Oct */
+/* Literal.String.Backtick */
+/* Literal.String.Char */
+/* Literal.String.Doc */
+/* Literal.String.Double */
+/* Literal.String.Escape */
+/* Literal.String.Heredoc */
+/* Literal.String.Interpol */
+/* Literal.String.Other */
+/* Literal.String.Regex */
+/* Literal.String.Single */
+/* Literal.String.Symbol */
+/* Name.Builtin.Pseudo */
+/* Name.Variable.Class */
+/* Name.Variable.Global */
+/* Name.Variable.Instance */
+/* Literal.Number.Integer.Long */
