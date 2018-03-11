@@ -8,7 +8,7 @@
     <language>en-us</language>
     <managingEditor>youremail@noserverhere.example.com (Your Name)</managingEditor>
     <webMaster>youremail@noserverhere.example.com (Your Name)</webMaster>
-    <copyright>(C) Your Name</copyright>
+    <copyright>&amp;copy; Your Name</copyright>
     <lastBuildDate>Thu, 01 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://solutionroute.github.io/hugo-smorg/exampleSite/rss.xml" rel="self" type="application/rss+xml" />
@@ -52,6 +52,18 @@ It makes use of a variety of open source projects including:</description>
 mobile-first, &lt;a href=&#34;https://bulma.io/&#34;&gt;Bulma&lt;/a&gt;-powered, reasonably minimalistic theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;
 &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt; static site generator.&lt;br /&gt;
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/</link>
+      <pubDate>Sat, 10 Mar 2018 17:23:09 -0800</pubDate>
+      <author>youremail@noserverhere.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/</guid>
+      <description>&lt;p&gt;Code examples in different languagues to demonstrate syntax highlighting with
+the current theme.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

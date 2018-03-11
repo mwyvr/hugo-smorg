@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
 	<base href="https://solutionroute.github.io/hugo-smorg/exampleSite/">
-	<link rel="stylesheet" href="https://solutionroute.github.io/hugo-smorg/exampleSite/css/smorg.min.css">
+	<link rel="stylesheet" href="https://solutionroute.github.io/hugo-smorg/exampleSite/css/smorg.css">
 	<link rel="canonical" href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/goisforlovers/">
 	
     
@@ -14,7 +14,6 @@
 	
 	
 </head>
-
 
 <body>
 
@@ -171,10 +170,10 @@ range.</p>
     {{ $element }} 
 {{ end }}</pre></div>
 <p><strong>Example 2: Declaring key and value variable name</strong></p>
-<div class="highlight"><pre class="chroma">{{range $index, $element := array}}
-    {{ $index }} 
-    {{ $element }} 
-{{ end }}</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">{{</span><span class="k">range</span> <span class="err">$</span><span class="nx">index</span><span class="p">,</span> <span class="err">$</span><span class="nx">element</span> <span class="o">:=</span> <span class="nx">array</span><span class="p">}}</span>
+	<span class="p">{{</span> <span class="err">$</span><span class="nx">index</span> <span class="p">}}</span> 
+	<span class="p">{{</span> <span class="err">$</span><span class="nx">element</span> <span class="p">}}</span> 
+<span class="p">{{</span> <span class="nx">end</span> <span class="p">}}</span></code></pre></div>
 <h3 id="conditionals">Conditionals</h3>
 
 <p>If, else, with, or, &amp; and provide the framework for handling conditional
@@ -293,11 +292,11 @@ groups_weight: 30
 notoc: true
 ---</pre></div>
 <p>Here is the corresponding code inside of the template:</p>
-<div class="highlight"><pre class="chroma">  {{ if not .Params.notoc }}
-    &lt;div id=&#34;toc&#34; class=&#34;well col-md-4 col-sm-6&#34;&gt;
-    {{ .TableOfContents }}
-    &lt;/div&gt;
-  {{ end }}</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">  {{ if not .Params.notoc }}
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;toc&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;well col-md-4 col-sm-6&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	{{ .TableOfContents }}
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  {{ end }}</code></pre></div>
 <h2 id="using-site-config-parameters">Using Site (config) Parameters</h2>
 
 <p>In your top-level configuration file (eg, <code>config.yaml</code>) you can define site
@@ -344,10 +343,15 @@ so, such as in this example:</p>
 	<div class="has-text-centered">
 		<p><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span>
 			   
-		   An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a> <br><i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>
+		   An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a>
 			  </p>
 		<hr>
-		<p class="has-text-grey is-size-7">&copy; Your Name</p>
+		<p class="has-text-grey is-size-7">
+		 <i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a><br>
+			   
+		 &copy; Your Name<br>
+			   
+		</p>
 	</div>
   </div>
 </footer>

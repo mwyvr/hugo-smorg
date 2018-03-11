@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/</loc>
+    <lastmod>2018-03-10T17:23:09-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/project/blorg-bread-machine/</loc>
     <lastmod>2018-03-03T09:17:17-08:00</lastmod>
   </url>
@@ -59,13 +64,13 @@
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/development/</loc>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/development/</loc>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -77,26 +82,26 @@
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/hugo/</loc>
-    <lastmod>2018-03-07T02:16:58-08:00</lastmod>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/hugo/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/hugo/</loc>
+    <lastmod>2018-03-07T02:16:58-08:00</lastmod>
     <priority>0</priority>
   </url>
   
