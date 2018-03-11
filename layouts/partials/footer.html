@@ -6,7 +6,12 @@
 		   {{ with .Site.Params.footer }}{{ . | safeHTML }}
 			  {{ else }}{{ "Add params:footer" }}{{end}}</p>
 		<hr>
-		<p class="has-text-grey is-size-7">{{ .Site.Copyright | markdownify }}</p>
+		<p class="has-text-grey is-size-7">
+		{{ with .Site.Params.subfooter }} {{ . | safeHTML }}<br>
+			  {{ else }}{{ "Add params:subfooter" }}{{end}} 
+		{{ with .Site.Copyright }} {{ . | safeHTML }}<br>
+			  {{ else }}{{ "Add Site.Copyright" }}{{end}} 
+		</p>
 	</div>
   </div>
 </footer>
