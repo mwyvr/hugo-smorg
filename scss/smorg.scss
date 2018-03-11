@@ -1,7 +1,7 @@
 /*! hugo-smorg theme | github.com/solutionroute/hugo-smorg */
 // Packaged css and min.css included, see README.md for build instructions.
 
-// Flatly @imports Lato from Google Fonts.
+// Flatly @imports Lato from Google Fonts - disabled
 // monospace isn't imported, use system fonts:
 $family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
 // import bulma + bulmaswatch, order is important
@@ -15,7 +15,8 @@ $link: hsl(217, 71%,  53%);
 
 @import 'bulma/bulma';
 @import 'bulmaswatch/flatly/overrides';
-@import 'sass-pygments/styles/scss/default.scss';
+@import 'chroma-sass-themes/scss/taapaca';
+@import 'font';
 
 // Finally, any specific customizations for your site; these make
 // the footer background on short pages seem infinite
