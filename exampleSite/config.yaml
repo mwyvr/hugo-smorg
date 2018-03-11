@@ -11,7 +11,7 @@ theme: "../../../hugo-smorg"
 author: 
     name: "Your Name"
     email: "youremail@noserverhere.example.com"
-copyright: "(C) Your Name"
+copyright: "&copy; Your Name"
 enableGitInfo: false
 summaryLength: 20
 canonifyurls: true
@@ -22,17 +22,15 @@ pygmentsCodefences: true
 
 # Access in templates via $.Site.Params.somevalue ------------------------
 params: 
-    debug: false # inserts path to template used
+    debug: false # cause template path to be output at top of page, handy for dev
     only_feed_summaries: true
-    # _default/single.html, partials/footer.html
-    fullname: "Your Full Or Organization Name"		
-    description: "160 characters or less describing you or your organizaiton or
-                  your site's purpose."
+    fullname: "Your Full Or Organization Name"
+    description: "160 characters or less describing you or your organizaiton or your site's purpose."
     # Further customize logo in partials/logo.html; 
     # used in partials nav.html and footer.
     logotype: '<span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span>' 
-    footer: 'An open source theme by <a href="https://github.com/solutionroute/">Mike Watkins</a>
-    <br><i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>'
+    footer: 'An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a>'
+    subfooter: '<i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>'
 
 # Primary Navigation Menu (partials/nav.html) ----------------------------
 # Our menu exploses About, Projects and Blog
