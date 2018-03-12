@@ -1,12 +1,23 @@
 ---
 title: About
-description: About the Hugo Example Site
-date: 2014-04-09
+description: About the Hugo-smorg Example Site
+date: 2018-03-01
 updated: 2018-03-01
 weight: -90
 menu: "sectionmenu"
 ---
 
+[hugo-smorg](https://solutionroute.github.io/hugo-smorg/) is a theme for
+[Hugo](https://gohugo.io/), the blazingly fast super flexible static site
+engine.
+
+See the project page: https://github.com/solutionroute/hugo-smorg, and  
+the demo site: https://solutionroute.github.io/hugo-smorg/exampleSite/  
+for more information.
+
+Go Hugo!
+
+## Hugo
 Hugo is a static site engine written in Go.
 
 
