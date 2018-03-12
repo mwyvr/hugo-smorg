@@ -33,9 +33,9 @@ params:
     subfooter: '<i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>'
 
 # Primary Navigation Menu (partials/nav.html) ----------------------------
-# Our menu exploses About, Projects and Blog
+# Our exampleSite menu exploses About, Projects and Blog
 # Note that "About" is added to the menu within content/about.md - it's 
-# not a "section", just a single page (although you can change this).
+# not a true "section" like post and project, although you can change this.
 
 menu:
     sectionmenu:
@@ -49,7 +49,9 @@ menu:
         # About and other single pages not within a section folder are 
         # added to this menu in front matter of the document i.e. about.md
 
-# Add Atom feed support, change default rss filename to rss.xml  ---------
+# Syndication feeds atom.xml and rss.xml ---------------------------------
+# Adds Atom feed support in conjunction with /layouts/index.atom.xml
+# Change default rss filename to rss.xml, layout is built in to Hugo 
 mediaTypes:
   application/atom:
     suffix: xml
