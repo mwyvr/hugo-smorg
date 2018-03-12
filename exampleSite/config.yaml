@@ -14,7 +14,6 @@ author:
 copyright: "&copy; Your Name"
 enableGitInfo: false
 summaryLength: 20
-canonifyurls: true
 pygmentsUseClasses: true
 pygmentsCodefencesGuessSyntax: true
 pygmentsCodefences: true
