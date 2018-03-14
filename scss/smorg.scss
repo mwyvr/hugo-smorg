@@ -4,19 +4,25 @@
 // Flatly @imports Lato from Google Fonts - disabled
 // monospace isn't imported, use system fonts:
 $family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+
 // import bulma + bulmaswatch, order is important
 // 1. swatch variables
 // 2. bulma itself
 // 3. swatch overrides
 @import 'bulmaswatch/flatly/variables';
 // overide theme elements after theme variables but before bulma 
+$family-primary: system-ui, sans-serif;
 $body-size:16px; 
+
 $link: hsl(217, 71%,  53%);
 
 @import 'bulma/bulma';
 @import 'bulmaswatch/flatly/overrides';
+// syntax highlighting
 @import 'chroma-sass-themes/scss/taapaca';
-@import 'font';
+// use a local system font (system-ui)
+@import 'system-font-css/system-font';
+
 
 // Finally, any specific customizations for your site; these make
 // the footer background on short pages seem infinite
