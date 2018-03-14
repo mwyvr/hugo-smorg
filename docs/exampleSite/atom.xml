@@ -6,17 +6,17 @@
   <id>https://solutionroute.github.io/hugo-smorg/exampleSite/</id>
   <author>
     <name>Your Name</name>
-    <email>youremail@noserverhere.example.com</email>
+    <email>thisemaildoesnotexist@www.example.com</email>
   </author>
   <generator>Hugo -- gohugo.io</generator>
   <entry>
 	<title>About</title>
     <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/"/>
     <id>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</id>
-    <published>2014-04-09T00:00:00+00:00</published>
-    <updated>2014-04-09T00:00:00+00:00</updated>
-	<content type="html"><![CDATA[Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:]]></content>
+    <published>2018-03-01T00:00:00+00:00</published>
+    <updated>2018-03-01T00:00:00+00:00</updated>
+	<content type="html"><![CDATA[hugo-smorg is a theme for Hugo, the blazingly fast super flexible static site engine.
+See the project page: https://github.com/solutionroute/hugo-smorg, and]]></content>
   </entry>
   <entry>
 	<title>Creating a New Theme</title>
@@ -52,7 +52,7 @@ mobile-first, <a href="https://bulma.io/">Bulma</a>-powered, reasonably minimali
     <published>2018-03-10T17:23:09-08:00</published>
     <updated>2018-03-10T17:23:09-08:00</updated>
 	<content type="html"><![CDATA[<p>Code examples in different languagues to demonstrate syntax highlighting with
-the current theme.</p>
+the current <a href="https://github.com/solutionroute/hugo-smorg">hugo-smorg</a> theme.</p>
 
 <p></p>]]></content>
   </entry>
