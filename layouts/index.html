@@ -20,7 +20,7 @@
 							<h3 class="subtitle has-text-primary is-marginless">Posts</h3>
 							<ul>
 							{{ range first 5 (where .Data.Pages "Section" "post") }}
-								<li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+							<li><a href="{{.Permalink}}"><span class="icon"><i class="far fa-file"></i></span>{{ .Title }}</a></li>
 							{{ end }}
 								<li><a href="/post/">More posts 
 									<i class="far fa-arrow-alt-circle-right"></i></a></li>
@@ -30,7 +30,7 @@
 							<h3 class="subtitle has-text-priimary is-marginless">Projects</h3>
 							<ul>
 							{{ range where .Data.Pages "Section" "project" }}
-								<li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+							<li><a href="{{.Permalink}}"><span class="icon"><i class="far fa-folder"></i></span>{{ .Title }}</a></li>
 							{{ end }}
 								<li><a href="/post/">More projects 
 									<i class="far fa-arrow-alt-circle-right"></i></a></li>
