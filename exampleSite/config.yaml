@@ -10,7 +10,7 @@ title: "Hugo-smorg"
 theme: "../../../hugo-smorg"
 author: 
     name: "Your Name"
-    email: "youremail@noserverhere.example.com"
+    email: "thisemaildoesnotexist@www.example.com"
 copyright: "&copy; Your Name"
 enableGitInfo: false
 summaryLength: 20
