@@ -4,3 +4,6 @@
 [submodule "scss/system-font-css"]
 	path = scss/system-font-css
 	url = https://github.com/jonathantneal/system-font-css.git
+[submodule "scss/bulmaswatch"]
+	path = scss/bulmaswatch
+	url = git@github.com:solutionroute/bulmaswatch.git
