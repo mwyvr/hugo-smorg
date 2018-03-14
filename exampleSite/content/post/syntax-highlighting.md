@@ -1,13 +1,13 @@
 ---
 title: "Syntax Highlighting"
-description: "A suite of code examples to demonstrate syntax highlighting with 
+description: "Code examples to demonstrate syntax highlighting with 
 			  the current theme."
 date: 2018-03-10T17:23:09-08:00
 draft: false
 ---
 
 Code examples in different languagues to demonstrate syntax highlighting with
-the current theme.
+the current [hugo-smorg](https://github.com/solutionroute/hugo-smorg) theme.
 
 <!--more-->
 
