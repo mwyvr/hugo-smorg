@@ -1,6 +1,5 @@
 /*! hugo-smorg theme | github.com/solutionroute/hugo-smorg */
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -110,7 +109,7 @@ code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: "Inconsolata", "Consolas", "Monaco", monospace; }
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 
 body {
   color: #34495e;
@@ -6981,6 +6980,5 @@ html {
 
 body > section {
   background-color: white !important; }
-
-body > section.section.hero {
-  padding: 0px !important; }
+  body > section.section.hero {
+    padding: 0px !important; }

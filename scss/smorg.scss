@@ -1,39 +1,40 @@
 /*! hugo-smorg theme | github.com/solutionroute/hugo-smorg */
-// Packaged css and min.css included, see README.md for build instructions.
+// See README.md for build instructions.
 
-// Flatly @imports Lato from Google Fonts - disabled
-// monospace isn't imported, use system fonts:
-$family-monospace: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+// Variable definition and import order is important. 
+// 1. Import any Bulmaswatch variables first.
+// 2. Override Bulmaswatch variables as required.
+// 3. Import Bulma itself
+// 4. Import swatch overrides
+// 5. Finish off with any theme specific customizations.
 
-// import bulma + bulmaswatch, order is important
-// 1. swatch variables
-// 2. bulma itself
-// 3. swatch overrides
-@import 'bulmaswatch/flatly/variables';
-// overide theme elements after theme variables but before bulma 
-$family-primary: system-ui, sans-serif;
+// 1 
+@import "bulmaswatch/flatly/variables";
+// 2 
 $body-size:16px; 
-
 $link: hsl(217, 71%,  53%);
+$family-sans-serif: system-ui, sans-serif;
+$family-monospace: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+// 3
+@import "bulma/bulma";
+// 4
+@import "bulmaswatch/flatly/overrides";
+// 5
 
-@import 'bulma/bulma';
-@import 'bulmaswatch/flatly/overrides';
-// syntax highlighting
+// Providing syntax highlighting theme:
 @import 'chroma-sass-themes/scss/taapaca';
-// use a local system font (system-ui)
+// Defines a future-proof "system-ui" font using local system font face declarations
 @import 'system-font-css/system-font';
 
-
-// Finally, any specific customizations for your site; these make
-// the footer background on short pages seem infinite
+// make footer background on short pages seem infinite
 html {
 	background-color: $white-ter !important;
 }
+
 body > section {
 	background-color: $white !important;
-}
-
-body > section.section.hero {
-	padding: 0px !important;
+	&.section.hero {
+		padding: 0px !important;
+	}
 }
 
