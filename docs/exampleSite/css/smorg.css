@@ -103,13 +103,13 @@ button,
 input,
 select,
 textarea {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: system-ui, sans-serif; }
 
 code,
 pre {
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: auto;
-  font-family: "Inconsolata", "Consolas", "Monaco", monospace; }
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 
 body {
   color: #34495e;
@@ -6926,6 +6926,7 @@ div.highlight, .highlight pre {
   background-color: #efefef;
   color: #3a3a3a; }
 
+/*! system-font.css v1.1.0 | CC0-1.0 License | github.com/jonathantneal/system-font-face */
 @font-face {
   font-family: system-ui;
   font-style: normal;
@@ -6979,6 +6980,5 @@ html {
 
 body > section {
   background-color: white !important; }
-
-body > section.section.hero {
-  padding: 0px !important; }
+  body > section.section.hero {
+    padding: 0px !important; }
