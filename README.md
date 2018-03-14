@@ -46,17 +46,17 @@ Hugo-smorg is:
 
 3. To play with the theme, run it in dev mode by either:
 
-	npm run dev			# run as http://localhost:1313/
+		npm run dev			# run as http://localhost:1313/
 
-	# or 
+	or 
 
-	cd exampleSite
-	./dev.sh			# read the script
+		cd exampleSite
+		./dev.sh			# read the script
 
 4. CSS (Sass SCSS) customizations can be made in `scss/smorg.scss` and will be
    immediately visible if running:
 
-   npm run dev
+		npm run dev
 
 Check `package.json` for a current list of available `npm run` scripts.
 
