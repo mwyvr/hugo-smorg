@@ -1,3 +1,6 @@
 [submodule "chroma-sass-themes"]
 	path = scss/chroma-sass-themes
 	url = git@github.com:solutionroute/chroma-sass-themes.git
+[submodule "scss/system-font-css"]
+	path = scss/system-font-css
+	url = https://github.com/jonathantneal/system-font-css.git
