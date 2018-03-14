@@ -1,17 +1,17 @@
 {
   "name": "hugo-smorg",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "Hugo theme for a small org / individual",
   "main": "index.js",
   "scripts": {
-    "clean":	"rm -rf static/css/*.css exampleSite/static/css/*.css exampleSite/public/*",
-    "scss":		"node-sass --include-path node_modules scss/smorg.scss > static/css/smorg.css",
-    "scss-min": "node-sass --include-path node_modules --output-style compressed scss/smorg.scss > static/css/smorg.min.css",
-	"scss-watch": "nodemon -e scss,sass --watch scss -x 'run-s --print-label scss scss-min'",
-    "hugo":		"hugo       --config exampleSite/config.yaml --contentDir exampleSite/content --destination exampleSite/public --forceSyncStatic --theme . --themesDir ..",
-    "serve":	"hugo serve --config exampleSite/config.yaml --contentDir exampleSite/content --destination exampleSite/public --forceSyncStatic --theme . --themesDir ..",
-    "dev":		"run-p --print-label --continue-on-error scss-watch serve",
-    "build":	"run-s --print-label --continue-on-error clean scss scss-min hugo"
+    "clean":		"rm -rf static/css/*.css exampleSite/static/css/*.css exampleSite/public/*",
+    "scss":			"node-sass --include-path node_modules scss/smorg.scss > static/css/smorg.css",
+    "scss:min":		"node-sass --include-path node_modules --output-style compressed scss/smorg.scss > static/css/smorg.min.css",
+    "scss:watch":	"nodemon -e scss,sass --watch scss -x 'run-s --print-label scss scss-min'",
+    "hugo":			"cd exampleSite && hugo -v",
+    "serve":		"cd exampleSite && hugo serve --forceSyncStatic",
+    "dev":			"run-p --print-label --continue-on-error scss-watch serve",
+    "build":		"run-s --print-label --continue-on-error clean scss scss-min hugo"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,6 @@
   "dependencies": {},
   "devDependencies": {
     "bulma": "^0.6.2",
-    "bulmaswatch": "^0.6.2",
     "node-sass": "^4.7.2",
     "nodemon": "^1.17.1",
     "npm-run-all": "^4.1.2"
