@@ -10,8 +10,8 @@
     "scss:watch":	"nodemon -e scss,sass --watch scss -x 'run-s --print-label scss scss-min'",
     "hugo":			"cd exampleSite && hugo -v",
     "serve":		"cd exampleSite && hugo serve --forceSyncStatic",
-    "dev":			"run-p --print-label --continue-on-error scss-watch serve",
-    "build":		"run-s --print-label --continue-on-error clean scss scss-min hugo"
+    "dev":			"run-p --print-label --continue-on-error scss:watch serve",
+    "build":		"run-s --print-label --continue-on-error clean scss scss:min hugo"
   },
   "repository": {
     "type": "git",
