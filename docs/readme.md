@@ -1,6 +1,6 @@
 # hugo-smorg
 
-Hugo-smorg is a mobile-first / responsive, minimalistic Bulma-powered theme for the [Hugo](https://gohugo.io/) static site generator.
+Hugo-smorg is a mobile-first / responsive Bulma-powered theme for the [Hugo](https://gohugo.io/) static site generator. The theme is under active development (spring 2018) and is being used as a base theme for a number of other projects. 
 
 Project page: [github.com/solutionroute/hugo-smorg project](https://github.com/solutionroute/hugo-smorg) 
 
