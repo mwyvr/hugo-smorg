@@ -29,7 +29,7 @@
 						<div class="column">
 							<h3 class="subtitle has-text-priimary is-marginless">Projects</h3>
 							<ul>
-							{{ range where .Data.Pages "Section" "project" }}
+							{{ range first 5 (where .Data.Pages "Section" "project") }}
 							<li><a href="{{.Permalink}}"><span class="icon"><i class="far fa-folder"></i></span>{{ .Title }}</a></li>
 							{{ end }}
 								<li><a href="/post/">More projects 
