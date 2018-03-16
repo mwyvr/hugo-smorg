@@ -7,7 +7,7 @@
     "clean":		"rm -rf static/css/*.css exampleSite/static/css/*.css exampleSite/public/*",
     "scss":			"node-sass --include-path node_modules scss/smorg.scss > static/css/smorg.css",
     "scss:min":		"node-sass --include-path node_modules --output-style compressed scss/smorg.scss > static/css/smorg.min.css",
-    "scss:watch":	"nodemon -e scss,sass --watch scss -x 'run-s --print-label scss scss-min'",
+    "scss:watch":	"nodemon -e scss,sass --watch scss -x 'run-s --print-label scss scss:min'",
     "hugo":			"cd exampleSite && hugo -v",
     "serve":		"cd exampleSite && hugo serve --forceSyncStatic",
     "dev":			"run-p --print-label --continue-on-error scss:watch serve",
