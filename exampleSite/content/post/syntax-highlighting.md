@@ -8,12 +8,14 @@ draft: false
 
 Code examples in different languagues to demonstrate syntax highlighting with
 the current [hugo-smorg](https://github.com/solutionroute/hugo-smorg) theme.
+Inline code looks like `this->var` and `expand($flurb, $times)`.
 
 <!--more-->
 
 ## HTML (Hugo example partials/summary.html)
 
 ```html
+<!-- html -->
 <section id="main">
   <div>
     <h1 id="title">{{ .Title }}</h1>
@@ -24,9 +26,11 @@ the current [hugo-smorg](https://github.com/solutionroute/hugo-smorg) theme.
   </div>
 </section>
 ```
+
 ## Go 
 
 ```go
+// Go Language
 
 package main
 
@@ -47,6 +51,7 @@ func main() {
 ## Javascript
 
 ```javascript
+// Javascript
 <script>
 const btn = document.getElementById('button');
 btn.addEventListener('click', function() {
@@ -58,20 +63,26 @@ btn.addEventListener('click', function() {
 ## Python
 
 ```python
+# Python
 from flask import Flask
 app = Flask(__name__)
 
+class Foo:
+	bar
+
 @app.route("/")
-def hello():
+def hello(42, **kwargs):
     return "Hello world!"
 
 if __name__ == "__main__":
     app.run()
+	print("HI", 42)
 ```
 
 ## Ruby
 
 ```ruby
+# Ruby
 require 'socket' 
 
 server = TCPServer.new('localhost', 2345)
