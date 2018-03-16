@@ -5,7 +5,8 @@ description = "Responsive mobile-first Bulma-powered minimalistic Hugo theme for
 homepage = "https://solutionroute.github.io/hugo-smorg/"
 tags = ["blog","mobile","bulma","responsive", "minimal"]
 features = ["responsive","atom","bulma","bulmaswatch"]
-min_version = "0.36"
+min_version = "0.32"
+updated = "2018-03-15"
 
 [author]
   name = "Mike Watkins"
