@@ -9,13 +9,7 @@
 				<article class="content">
 					<h1 class="title is-3">{{ .Title }}</h1>
 					{{ .Content }}
-					<p class="has-text-grey-light is-6 is-pulled-right"><em>
-					{{ if eq .Type "post" }} 
-						&mdash;{{ partial "page-date.html" . }}
-						{{ with .Params.categories }} posted in {{ partial "page-categories.html" . }}; {{ end }}
-						{{ with .Params.tags }}tagged with {{ partial "page-tags.html" . }}{{ end }}
-					{{end}}
-					</em></p>
+					{{ partial "page-meta.html" . }}
 				</article>
 			</div>
 		</div>
