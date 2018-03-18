@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-{{- partial "head.html" . -}}
+{{- partial "head.html" . }}
 <body>
-{{- block "nav" . -}}
+{{- block "nav" . }}
 {{ end }}
-{{ block "main" . }}
+{{- block "main" . }}
 {{ end }}
-{{ block "footer" . }}
+{{- block "footer" . }}
 {{ end }}
-{{- partial "microdata/json-ld.html" . -}}
-{{- partial "js.html" . -}}
-{{ if eq .Kind "404" }}{{ partial "js404.html" . }}{{ end }}
+{{- partial "microdata/json-ld.html" . }}
+{{- partial "js.html" . }}
+{{ if eq .Kind "404" }}{{- partial "js404.html" . }}{{ end }}
 </body>
 </html>

@@ -18,5 +18,5 @@ References config file variables:
 	{{ else }}
 	<title>{{ .Title | default "Set Title in doc" }} - {{ .Site.Title }}</title>
 	{{ end }}
-	{{- with $.Site.Params.description }}<meta name="description" content="{{.}}">{{end}}
+	{{- with $.Site.Params.description }}<meta name="description" content="{{.}}">{{ end }}
 </head>
