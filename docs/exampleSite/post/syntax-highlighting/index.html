@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<base href="https://solutionroute.github.io/hugo-smorg/exampleSite/">
+	<link rel="stylesheet" href="https://solutionroute.github.io/hugo-smorg/exampleSite/css/smorg.css">
+	<link rel="canonical" href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/">
+	
+    
+	<title>Syntax Highlighting - Hugo-smorg</title>
+	<meta name="description" content="Code examples to demonstrate syntax highlighting with the current theme.">
+	
+</head>
+
+<body>
+
+
+<nav class="navbar is-primary" aria-label="main navigation">
+	<div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item has-text-white-ter" href="/"><span class="has-text-weight-bold"><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span></span>
+</a>
+			<div class="navbar-burger burger" data-target="navMenu">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		</div>
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-end">
+			
+				<a class="navbar-item " href="/hugo-smorg/exampleSite/about/">About</a>
+
+			
+				<a class="navbar-item " href="/hugo-smorg/exampleSite/post/">Blog</a>
+
+			
+				<a class="navbar-item " href="/hugo-smorg/exampleSite/project/">Projects</a>
+
+			
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+					<h1 class="title is-3">Syntax Highlighting</h1>
+					
+
+					<p>Code examples in different languagues to demonstrate syntax highlighting with
+the current <a href="https://github.com/solutionroute/hugo-smorg">hugo-smorg</a> theme.
+Inline code looks like <code>this-&gt;var</code> and <code>expand($flurb, $times)</code>.</p>
+
+<p></p>
+
+<h2 id="html-hugo-example-partials-summary-html">HTML (Hugo example partials/summary.html)</h2>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- html --&gt;</span>
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;main&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;title&#34;</span><span class="p"></span><span class="p">&gt;</span>{{ .Title }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>Hello world!<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+    {{ range .Data.Pages }}
+      {{ .Render &#34;summary&#34;}}
+    {{ end }}
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="go">Go</h2>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// Go Language
+</span><span class="c1"></span>
+<span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;fmt&#34;</span>
+    <span class="s">&#34;net/http&#34;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">http</span><span class="p">.</span><span class="nx">HandleFunc</span><span class="p">(</span><span class="s">&#34;/&#34;</span><span class="p">,</span> <span class="kd">func</span><span class="p">(</span><span class="nx">w</span> <span class="nx">http</span><span class="p">.</span><span class="nx">ResponseWriter</span><span class="p">,</span> <span class="nx">r</span> <span class="o">*</span><span class="nx">http</span><span class="p">.</span><span class="nx">Request</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Fprint</span><span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="s">&#34;Hello world!&#34;</span><span class="p">)</span>
+	<span class="p">})</span>
+
+    <span class="nx">http</span><span class="p">.</span><span class="nx">ListenAndServe</span><span class="p">(</span><span class="s">&#34;:8080&#34;</span><span class="p">,</span> <span class="kc">nil</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+<h2 id="javascript">Javascript</h2>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// Javascript
+</span><span class="c1"></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="k">const</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</code></pre></div>
+<h2 id="python">Python</h2>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Python</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+	<span class="n">bar</span>
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;/&#34;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa"></span><span class="s2">&#34;Hello world!&#34;</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="sa"></span><span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+	<span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;HI&#34;</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span></code></pre></div>
+<h2 id="ruby">Ruby</h2>
+<div class="highlight"><pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="c1"># Ruby</span>
+<span class="nb">require</span> <span class="s1">&#39;socket&#39;</span> 
+
+<span class="n">server</span> <span class="o">=</span> <span class="no">TCPServer</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">2345</span><span class="o"></span><span class="p">)</span>
+
+<span class="kp">loop</span> <span class="k">do</span>
+
+  <span class="n">socket</span> <span class="o">=</span> <span class="n">server</span><span class="o">.</span><span class="n">accept</span>
+  <span class="n">request</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">gets</span>
+  <span class="n">socket</span><span class="o">.</span><span class="n">print</span> <span class="s2">&#34;HTTP/1.1 200 OK</span><span class="se">\r\n</span><span class="s2">&#34;</span> <span class="o">+</span>
+               <span class="s2">&#34;Content-Type: text/plain</span><span class="se">\r\n</span><span class="s2">&#34;</span> <span class="o">+</span>
+               <span class="s2">&#34;Content-Length: </span><span class="si">#{</span><span class="n">response</span><span class="o">.</span><span class="n">bytesize</span><span class="si">}</span><span class="se">\r\n</span><span class="s2">&#34;</span> <span class="o">+</span>
+               <span class="s2">&#34;Connection: close</span><span class="se">\r\n</span><span class="s2">&#34;</span>
+
+  <span class="c1"># required by the protocol.</span>
+  <span class="n">socket</span><span class="o">.</span><span class="n">print</span> <span class="s2">&#34;</span><span class="se">\r\n</span><span class="s2">&#34;</span>
+  <span class="n">socket</span><span class="o">.</span><span class="n">print</span> <span class="s2">&#34;Hello world!</span><span class="se">\n</span><span class="s2">&#34;</span>
+  <span class="n">socket</span><span class="o">.</span><span class="n">close</span>
+
+<span class="k">end</span></code></pre></div>
+<h2 id="a-more-involved-go-example">A more involved Go example</h2>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="c1">// Copyright 2013 The Go Authors. All rights reserved.
+</span><span class="c1">// Use of this source code is governed by a BSD-style
+</span><span class="c1">// license that can be found in the LICENSE file.
+</span><span class="c1"></span>
+<span class="c1">// Package netutil provides network utility functions, complementing the more
+</span><span class="c1">// common ones in the net package.
+</span><span class="c1"></span><span class="kn">package</span> <span class="nx">netutil</span> <span class="c1">// import &#34;golang.org/x/net/netutil&#34;
+</span><span class="c1"></span>
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&#34;net&#34;</span>
+	<span class="s">&#34;sync&#34;</span>
+<span class="p">)</span>
+
+<span class="c1">// LimitListener returns a Listener that accepts at most n simultaneous
+</span><span class="c1">// connections from the provided Listener.
+</span><span class="c1"></span><span class="kd">func</span> <span class="nx">LimitListener</span><span class="p">(</span><span class="nx">l</span> <span class="nx">net</span><span class="p">.</span><span class="nx">Listener</span><span class="p">,</span> <span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="nx">net</span><span class="p">.</span><span class="nx">Listener</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="o">&amp;</span><span class="nx">limitListener</span><span class="p">{</span><span class="nx">l</span><span class="p">,</span> <span class="nb">make</span><span class="p">(</span><span class="kd">chan</span> <span class="kd">struct</span><span class="p">{},</span> <span class="nx">n</span><span class="p">)}</span>
+<span class="p">}</span>
+
+<span class="kd">type</span> <span class="nx">limitListener</span> <span class="kd">struct</span> <span class="p">{</span>
+	<span class="nx">net</span><span class="p">.</span><span class="nx">Listener</span>
+	<span class="nx">sem</span> <span class="kd">chan</span> <span class="kd">struct</span><span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="p">(</span><span class="nx">l</span> <span class="o">*</span><span class="nx">limitListener</span><span class="p">)</span> <span class="nx">acquire</span><span class="p">()</span> <span class="p">{</span> <span class="nx">l</span><span class="p">.</span><span class="nx">sem</span> <span class="o">&lt;-</span> <span class="kd">struct</span><span class="p">{}{}</span> <span class="p">}</span>
+<span class="kd">func</span> <span class="p">(</span><span class="nx">l</span> <span class="o">*</span><span class="nx">limitListener</span><span class="p">)</span> <span class="nx">release</span><span class="p">()</span> <span class="p">{</span> <span class="o">&lt;-</span><span class="nx">l</span><span class="p">.</span><span class="nx">sem</span> <span class="p">}</span>
+
+<span class="kd">func</span> <span class="p">(</span><span class="nx">l</span> <span class="o">*</span><span class="nx">limitListener</span><span class="p">)</span> <span class="nx">Accept</span><span class="p">()</span> <span class="p">(</span><span class="nx">net</span><span class="p">.</span><span class="nx">Conn</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">l</span><span class="p">.</span><span class="nx">acquire</span><span class="p">()</span>
+	<span class="nx">c</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">l</span><span class="p">.</span><span class="nx">Listener</span><span class="p">.</span><span class="nx">Accept</span><span class="p">()</span>
+	<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+		<span class="nx">l</span><span class="p">.</span><span class="nx">release</span><span class="p">()</span>
+		<span class="k">return</span> <span class="kc">nil</span><span class="p">,</span> <span class="nx">err</span>
+		<span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&#34;This %s code was never in here!&#34;</span><span class="p">,</span> <span class="err">&#39;</span><span class="nx">funky</span><span class="err">&#39;</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="o">&amp;</span><span class="nx">limitListenerConn</span><span class="p">{</span><span class="nx">Conn</span><span class="p">:</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">release</span><span class="p">:</span> <span class="nx">l</span><span class="p">.</span><span class="nx">release</span><span class="p">},</span> <span class="kc">nil</span>
+<span class="p">}</span>
+
+<span class="kd">type</span> <span class="nx">limitListenerConn</span> <span class="kd">struct</span> <span class="p">{</span>
+	<span class="nx">net</span><span class="p">.</span><span class="nx">Conn</span>
+	<span class="nx">releaseOnce</span> <span class="nx">sync</span><span class="p">.</span><span class="nx">Once</span>
+	<span class="nx">release</span>     <span class="kd">func</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="p">(</span><span class="nx">l</span> <span class="o">*</span><span class="nx">limitListenerConn</span><span class="p">)</span> <span class="nx">Close</span><span class="p">()</span> <span class="kt">error</span> <span class="p">{</span>
+	<span class="nx">err</span> <span class="o">:=</span> <span class="nx">l</span><span class="p">.</span><span class="nx">Conn</span><span class="p">.</span><span class="nx">Close</span><span class="p">()</span>
+	<span class="nx">l</span><span class="p">.</span><span class="nx">releaseOnce</span><span class="p">.</span><span class="nx">Do</span><span class="p">(</span><span class="nx">l</span><span class="p">.</span><span class="nx">release</span><span class="p">)</span>
+	<span class="k">return</span> <span class="nx">err</span>
+<span class="p">}</span></code></pre></div>
+					<p class="has-text-grey-light is-6 is-pulled-right"><em>
+ 
+	&mdash;
+<time datetime="2018-03-10">10 March 2018</time>
+
+
+	 posted in 
+<a href="https://solutionroute.github.io/categories/hugo">hugo</a>
+
+; 
+	tagged with 
+<a href="https://solutionroute.github.io/tags/tips">tips</a>,
+<a href="https://solutionroute.github.io/tags/dev">dev</a>
+
+
+</em></p>
+
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer class="footer">
+  <div class="container content">
+	<div class="has-text-centered">
+		<p><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span>
+			   
+		   An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a>
+			  </p>
+		<hr>
+		<p class="has-text-grey is-size-7">
+		 <i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a><br>
+			   
+		 &copy; Your Name<br>
+			   
+		</p>
+	</div>
+  </div>
+</footer>
+
+
+
+
+<script type="application/ld+json">
+{ 
+	"@context": "http://schema.org", 
+	"@type": "WebPage",
+	"@id": "https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/",
+	"name": "Syntax Highlighting", 
+	"description": "Code examples to demonstrate syntax highlighting with the current theme.",
+	"author": { 
+		"@type": "Person", 
+		"name": "Mike Watkins"
+	}
+}
+</script>
+
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+</script>
+
+
+
+</body>
+</html>
