@@ -1,2 +1,27 @@
-{{ if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/single.html</p>{{end}}
-{{ partial "pages/single.html" . }}
+{{ define "nav" }}
+{{ partial "nav.html" . }}
+{{ end }}
+{{ define "main" }}
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+					<h1 class="title is-3">{{ .Title }}</h1>
+					{{ .Content }}
+					<p class="has-text-grey-light is-6 is-pulled-right"><em>
+					{{ if eq .Type "post" }} 
+						&mdash;{{ partial "page-date.html" . }}
+						{{ with .Params.categories }} posted in {{ partial "page-categories.html" . }}; {{ end }}
+						{{ with .Params.tags }}tagged with {{ partial "page-tags.html" . }}{{ end }}
+					{{end}}
+					</em></p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ define "footer" }}
+{{ partial "footer" . }}
+{{ end }}

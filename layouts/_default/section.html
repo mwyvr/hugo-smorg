@@ -1,2 +1,22 @@
-{{ if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/section.html</p>{{end}}
-{{ partial "pages/section-summary.html" . }}
+{{ define "nav" }}
+  {{ partial "nav.html" . }}
+{{ end }}
+{{ define "main" }}
+<section class="section" itemscope itemtype="http://schema.org/AboutPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+				<h1 class="title">{{ .Title }}</h1>
+    {{ range .Data.Pages }}
+	 {{ .Render "summary"}}
+    {{ end }}
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
+{{ define "footer" }}
+  {{ partial "footer" . }}
+{{ end }}
