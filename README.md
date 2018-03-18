@@ -35,30 +35,30 @@ Hugo-smorg is:
 
 	https://github.com/solutionroute/hugo-smorg.git
 
-2. Install the dependencies:
+2. (Optionally) install the dependencies:
 
-	a) Node-sass and npm
+To adapt the provided CSS you'll need SASS at the very least. I'm using
+`node-sass` and `npm` scripts and a few other tools provided via npm. If you've
+already got node and npm installed, simply run npm install:
 
-	b) Once or if node-sass and npm are installed, complete the installation of
-	project tools:
+	npm install
 
-		npm install
+Which will include Bulma, none-sass and a few other helpers in your project.
 
-3. To play with the theme, run it in dev mode by either:
+3. To view the theme:
 
-		npm run dev			# run as http://localhost:1313/
+	cd exampleSite
+	hugo server
 
-	or 
+4. Developing / changing:
 
-		cd exampleSite
-		./dev.sh			# read the script
+Check `package.json` for a current list of available `npm run` scripts for
+building SCSS and more, or run the all-in-one script to launch Hugo in watch
+mode and another process to watch your SCSS files for changes:
 
-4. CSS (Sass SCSS) customizations can be made in `scss/smorg.scss` and will be
-   immediately visible if running:
+	cd yoursite/themes/hugo-smorg
+	npm run dev
 
-		npm run dev
-
-Check `package.json` for a current list of available `npm run` scripts.
 
 [Bulma]: https://bulma.io/ 
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
