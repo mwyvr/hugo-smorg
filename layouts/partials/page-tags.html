@@ -1,4 +1,2 @@
-{{ range . }}
-<span class="tag"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"><i class="fas fa-tag"></i> {{ . }}</a></span>
-{{ end }}
-
+{{ range $i, $value := . }}{{ if $i }},{{ end }}
+<a href="{{ "/tags/" | absLangURL }}{{ $value | urlize }}">{{ $value }}</a>{{ end }}
