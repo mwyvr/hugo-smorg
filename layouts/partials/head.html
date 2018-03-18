@@ -1,17 +1,22 @@
-<head> <!-- see https://github.com/joshbuchea/HEAD -->
+<!--
+References config file variables:
+	
+-->
+<head> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
 	<base href="{{ .Site.BaseURL }}">
 	<link rel="stylesheet" href="{{ "css/smorg.css" | absURL }}">
-	{{if ne .Kind "404"}}<link rel="canonical" href="{{ .Permalink }}">
-	{{ range .AlternativeOutputFormats -}}
-  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
-  {{ end -}}{{end}}
-    {{if .IsHome}}<title>{{ .Site.Title | default "Set Site Title in config.yaml" }}</title>
-	{{ with $.Site.Params.description }}<meta name="description" content="{{.}}">{{end}}
-	{{else}}
+	{{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
+	      href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">{{ end }}
+	{{- end }}
+    {{- if .IsHome }}
+	<title>{{ .Site.Title | default "Set Site Title in config.yaml" }}</title>
+	{{ else }}
 	<title>{{ .Title | default "Set Title in doc" }} - {{ .Site.Title }}</title>
-	{{ with .Description }}<meta name="description" content="{{.}}">{{end}}
-	{{end}}
+	{{ end }}
+	{{- with $.Site.Params.description }}<meta name="description" content="{{.}}">{{end}}
 </head>

@@ -1,3 +1,2 @@
-{{ range $i, $value := . }}{{ if $i }},{{ end }}
-<a href="{{ "/categories/" | absLangURL }}{{ $value | urlize }}">{{ $value }}</a>{{ end }}
-
+{{- range $i, $value := . -}}{{ if $i }}, {{ end -}}
+<a href="{{ "/categories/" | absLangURL }}{{ $value | urlize }}">{{ $value }}</a>{{- end -}}

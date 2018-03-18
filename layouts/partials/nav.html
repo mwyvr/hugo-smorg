@@ -1,21 +1,20 @@
-{{ $currentPage := . }}
-<nav class="navbar is-primary" aria-label="main navigation">
-	<div class="container">
-		<div class="navbar-brand">
-			<a class="navbar-item has-text-white-ter" href="/">{{ partial "logo.html" . }}</a>
-			<div class="navbar-burger burger" data-target="navMenu">
-			  <span></span>
-			  <span></span>
-			  <span></span>
+{{- $currentPage := . }}
+	<nav class="navbar is-primary" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item has-text-white-ter" href="/">{{- partial "logo.html" . -}}</a>
+				<div class="navbar-burger burger" data-target="navMenu">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
+			<div class="navbar-menu" id="navMenu">
+				<div class="navbar-end">
+				{{- range .Site.Menus.sectionmenu }}
+					<a class="navbar-item {{if or ($currentPage.IsMenuCurrent "sectionmenu" .) ($currentPage.HasMenuCurrent "sectionmenu" .) }} is-active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+				{{ end }}
+				</div>
 			</div>
 		</div>
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end">
-			{{ range .Site.Menus.sectionmenu }}
-				<a class="navbar-item {{if or ($currentPage.IsMenuCurrent "sectionmenu" .) ($currentPage.HasMenuCurrent "sectionmenu" .) }} is-active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
-
-			{{ end }}
-			</div>
-		</div>
-	</div>
-</nav>
+	</nav>

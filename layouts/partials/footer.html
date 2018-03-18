@@ -1,16 +1,23 @@
+<!--
+References config file variables:
+	.Site.Params.logotype
+	.Site.Params.footer
+	.Site.Params.subfooter
+	.Site.Copyright
+-->
 <footer class="footer">
   <div class="container content">
 	<div class="has-text-centered">
 		<p>{{ with .Site.Params.logotype }}{{ . | safeHTML }}
-			  {{ else }}{{ "Add params:logotype" }}{{end}} 
+			  {{ else }}{{ "Add config: Params.logotype" }}{{end}} 
 		   {{ with .Site.Params.footer }}{{ . | safeHTML }}
-			  {{ else }}{{ "Add params:footer" }}{{end}}</p>
+			  {{ else }}{{ "Add config: Params.footer" }}{{end}}</p>
 		<hr>
 		<p class="has-text-grey is-size-7">
 		{{ with .Site.Params.subfooter }} {{ . | safeHTML }}<br>
-			  {{ else }}{{ "Add params:subfooter" }}{{end}} 
+			  {{ else }}{{ "Add config: Params.subfooter" }}{{end}} 
 		{{ with .Site.Copyright }} {{ . | safeHTML }}<br>
-			  {{ else }}{{ "Add Site.Copyright" }}{{end}} 
+			  {{ else }}{{ "Add config: Copyright" }}{{end}} 
 		</p>
 	</div>
   </div>

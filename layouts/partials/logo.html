@@ -1,1 +1,1 @@
-<span class="has-text-weight-bold">{{ with .Site.Params.logotype }}{{ . | safeHTML }}{{ else }}{{ "Add params:logotype" }}{{end}}</span>
+<span class="has-text-weight-bold">{{- with .Site.Params.logotype }}{{ . | safeHTML -}}{{ else }}{{ "Add params:logotype" }}{{ end -}}</span>
