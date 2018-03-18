@@ -23,6 +23,7 @@ pygmentsCodefences: true
 # Access in templates via $.Site.Params.somevalue ------------------------
 params: 
     debug: false # cause template path to be output at top of page, handy for dev
+    cssPath: 'css/smorg.css' # Default, override here
     only_feed_summaries: true
     fullname: "Your Full Or Organization Name"
     description: "160 characters or less describing you or your organization or your site's purpose."

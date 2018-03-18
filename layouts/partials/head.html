@@ -7,7 +7,7 @@ References config file variables:
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
 	<base href="{{ .Site.BaseURL }}">
-	<link rel="stylesheet" href="{{ "css/smorg.css" | absURL }}">
+	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}">
 	{{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">
 	{{- range .AlternativeOutputFormats }}
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
