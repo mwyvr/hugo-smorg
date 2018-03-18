@@ -4,10 +4,10 @@
 	"@type": "WebPage",
 	"@id": "{{ .Permalink }}",
 	"name": "{{ .Title }}", 
-	{{ with .Params.description }}"description": "{{ . }}"{{ end }}{{ with .Params.author }},
+	{{- with .Params.description }}"description": "{{ . }}"{{ end }}{{ with .Params.author }},
 	"author": { 
 		"@type": "Person", 
-		"name": "{{ . }}"{{ end }}
-	}
+		"name": "{{ . }}"
+		}{{ end }}
 }
 </script>
