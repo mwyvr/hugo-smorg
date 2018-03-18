@@ -1,13 +1,14 @@
 # exampleSite 
 #
-# Requires the Hugo static site generator. https://gohugo.io/
+# demo site for Hugo-smorg, a theme for the Hugo static site generator. https://gohugo.io/
+
+# themesDir is needed only to run exampleSite in-place
+themesDir: "../.."
 
 baseURL: "http://www.example.com/"
 languageCode: "en-us"
 title: "Hugo-smorg"
-# theme: "hugo-smorg"
-# Following only for exampleSite
-theme: "../../../hugo-smorg"
+theme: "hugo-smorg"
 author: 
     name: "Your Name"
     email: "thisemaildoesnotexist@www.example.com"
