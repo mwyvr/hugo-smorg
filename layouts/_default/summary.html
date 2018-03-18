@@ -3,7 +3,7 @@
     <header>
 		<h1 class="title is-4"><a href="{{ .Permalink }}">{{ .Title }}</a> </h1>
 		<p class="subtitle has-text-grey-light is-6">
-		{{ partial "page-date.html" . }}{{ partial "status.html" .}}</p>
+		{{ partial "page-date.html" . }}{{ partial "page-status.html" .}}</p>
     </header>
 	{{ .Summary }} {{ if .Truncated }}<a href='{{ .Permalink }}'><nobr>Continue reading ({{ .FuzzyWordCount }} words)...</nobr></a>{{end}}
   <footer>
