@@ -1,0 +1,5 @@
+{{ if .IsHome }}
+{{ partial "microdata/json-ld-home.html" . }}
+{{ else }}
+{{ partial "microdata/json-ld-page.html" . }}
+{{ end }}
