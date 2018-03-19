@@ -8,7 +8,7 @@ This theme will keep pace with current Hugo features and is under active
 development (March 2018). An ongoing work in progress, I'm using it as a base
 for other projects.
 
-Current release: v0.5, see [CHANGELOG](CHANGELOG.md).
+Current release: v0.5, March 19 2018 - see [CHANGELOG](CHANGELOG.md).
 
 [**Demo site**](https://solutionroute.github.io/hugo-smorg/exampleSite/).
 
@@ -35,32 +35,24 @@ Hugo-smorg is:
 
 1. Clone the repo:
 
-	https://github.com/solutionroute/hugo-smorg.git
+	git clone --recursive https://github.com/solutionroute/hugo-smorg.git
 
-2. (Optionally) install development dependencies:
-
-To adapt the provided CSS you'll need SASS at the very least. I'm using
-`node-sass` and `npm` scripts and a few other tools provided via npm. If you've
-already got node and npm installed, simply run npm install:
-
-	npm install
-
-Which will include Bulma, none-sass and a few other helpers in your project.
-
-3. To view the theme:
+2. To view the theme:
 
 	cd exampleSite
 	hugo server
 
-4. Developing / changing:
+3. (Optionally) install development dependencies:
 
-Check `package.json` for a current list of available `npm run` scripts for
-building SCSS and more, or run the all-in-one script `npm run dev` to launch
-Hugo in watch mode and start another process to watch your SCSS files for
-changes:
+To adapt the provided SASS produced CSS you'll need to install SASS and Bulma
+at the very least; the least painful way to go about this is via Nodejs and
+npm; Once those tools are installed, in the hugo-smorg theme directory:
 
-	cd yoursite/themes/hugo-smorg
-	npm run dev
+	npm install
+
+This will install the dependencies listed in _package.json_ including Bulma and
+node-sass. You'll also find some handy run scripts including `npm run dev`
+which will build your site and SCSS/CSS files and reload automatically.
 
 
 [Bulma]: https://bulma.io/ 
