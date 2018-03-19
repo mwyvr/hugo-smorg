@@ -2,16 +2,18 @@
   {{ partial "nav.html" . }}
 {{ end }}
 {{ define "main" }}
+{{ if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/section.html</p>{{end}}
 <section class="section" itemscope itemtype="http://schema.org/AboutPage">
 	<div class="container">
 		<div class="columns">
 			<div class="column is-8 is-offset-2">
 				<article class="content">
 				<h1 class="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-	 {{ .Render "summary"}}
-    {{ end }}
+				{{ range .Paginator.Pages }}
+				{{ .Render "summary" }}
+				{{ end }}
 				</article>
+				{{ partial "pagination.html" . }}
 			</div>
 		</div>
 	</div>

@@ -8,10 +8,11 @@
 			<div class="column is-8 is-offset-2">
 				<article class="content">
 				<h1 class="title">{{ .Title }}</h1>
-    {{ range .Data.Pages }}
-	 {{ .Render "summary"}}
-    {{ end }}
+				{{ range .Paginator.Pages }}
+				{{ .Render "summary" }}
+				{{ end }}
 				</article>
+				{{ partial "pagination.html" . }}
 			</div>
 		</div>
 	</div>
