@@ -1,7 +1,7 @@
 {
   "name": "hugo-smorg",
-  "version": "0.4.0",
-  "description": "Hugo theme for a small org / individual",
+  "version": "0.5.0",
+  "description": "Hugo Bulma powered theme for a small org / individual",
   "main": "index.js",
   "scripts": {
     "clean":		"rm -rf static/css/*.css exampleSite/static/css/*.css exampleSite/public/*",
