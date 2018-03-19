@@ -1,12 +1,10 @@
 # Hugo-smorg Changelog
 
-## HEAD
+## v0.5
 
-In progress as of March 14: template updates including:
-
-* pagination
-* categories and links between sections and categories and tags
-* refining list and single pages
+* Bulma-styled Pagination on list / summary / section (post) / taxonomy pages
+* Simplifcation overall; whitespace clean up
+* Fix exampleSite config.yaml
 
 ## v0.4
 
