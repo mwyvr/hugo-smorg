@@ -22,6 +22,7 @@ Changes:
 * Add `npm` based build and dev scripts.
 * package.json dropped dependency on bulmaswatch; added nodemon and npm-run-all.
 * Submodules added to scss: bulmaswatch  chroma-sass-themes system-font-css
+* Add Atom syndication format; [details here](https://github.com/comfusion/after-dark/issues/32#issuecomment-312515542).
 
 ## v0.1 - v0.3
 
