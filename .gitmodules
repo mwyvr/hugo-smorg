@@ -7,3 +7,4 @@
 [submodule "scss/bulmaswatch"]
 	path = scss/bulmaswatch
 	url = git@github.com:solutionroute/bulmaswatch.git
+	branch = gh-pages
