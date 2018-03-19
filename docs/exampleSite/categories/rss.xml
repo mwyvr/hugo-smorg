@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo-smorg</title>
+    <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/</link>
+    <description>Recent content in Categories on Hugo-smorg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>thisemaildoesnotexist@www.example.com (Your Name)</managingEditor>
+    <webMaster>thisemaildoesnotexist@www.example.com (Your Name)</webMaster>
+    <copyright>&amp;copy; Your Name</copyright>
+    
+	<atom:link href="https://solutionroute.github.io/hugo-smorg/exampleSite/categories/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/hugo/</link>
+      <pubDate>Wed, 07 Mar 2018 02:16:58 -0800</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Products</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/products/</link>
+      <pubDate>Sat, 03 Mar 2018 09:17:17 -0800</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/products/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

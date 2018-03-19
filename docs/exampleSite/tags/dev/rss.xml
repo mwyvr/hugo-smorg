@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on Hugo-smorg</title>
+    <link>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/dev/</link>
+    <description>Recent content in Dev on Hugo-smorg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>thisemaildoesnotexist@www.example.com (Your Name)</managingEditor>
+    <webMaster>thisemaildoesnotexist@www.example.com (Your Name)</webMaster>
+    <copyright>&amp;copy; Your Name</copyright>
+    <lastBuildDate>Sat, 10 Mar 2018 17:23:09 -0800</lastBuildDate>
+    
+	<atom:link href="https://solutionroute.github.io/hugo-smorg/exampleSite/tags/dev/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/</link>
+      <pubDate>Sat, 10 Mar 2018 17:23:09 -0800</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/</guid>
+      <description>&lt;p&gt;Code examples in different languagues to demonstrate syntax highlighting with
+the current &lt;a href=&#34;https://github.com/solutionroute/hugo-smorg&#34;&gt;hugo-smorg&lt;/a&gt; theme.
+Inline code looks like &lt;code&gt;this-&amp;gt;var&lt;/code&gt; and &lt;code&gt;expand($flurb, $times)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

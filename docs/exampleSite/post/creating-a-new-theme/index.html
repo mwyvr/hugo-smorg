@@ -7,44 +7,35 @@
 	<base href="https://solutionroute.github.io/hugo-smorg/exampleSite/">
 	<link rel="stylesheet" href="https://solutionroute.github.io/hugo-smorg/exampleSite/css/smorg.css">
 	<link rel="canonical" href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/">
-	
-    
 	<title>Creating a New Theme - Hugo-smorg</title>
-	<meta name="description" content="Michael Henderson explains how to create a simple Hugo theme from scratch.">
-	
+	<meta name="description" content="160 characters or less describing you or your organization or your site&#39;s purpose.">
 </head>
 
 <body>
 
-
-<nav class="navbar is-primary" aria-label="main navigation">
-	<div class="container">
-		<div class="navbar-brand">
-			<a class="navbar-item has-text-white-ter" href="/"><span class="has-text-weight-bold"><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span></span>
+	<nav class="navbar is-primary" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item has-text-white-ter" href="/"><span class="has-text-weight-bold"><span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span></span>
 </a>
-			<div class="navbar-burger burger" data-target="navMenu">
-			  <span></span>
-			  <span></span>
-			  <span></span>
+				<div class="navbar-burger burger" data-target="navMenu">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
+			<div class="navbar-menu" id="navMenu">
+				<div class="navbar-end">
+					<a class="navbar-item " href="/hugo-smorg/exampleSite/about/">About</a>
+				
+					<a class="navbar-item " href="/hugo-smorg/exampleSite/post/">Blog</a>
+				
+					<a class="navbar-item " href="/hugo-smorg/exampleSite/project/">Projects</a>
+				
+				</div>
 			</div>
 		</div>
-		<div class="navbar-menu" id="navMenu">
-			<div class="navbar-end">
-			
-				<a class="navbar-item " href="/hugo-smorg/exampleSite/about/">About</a>
-
-			
-				<a class="navbar-item " href="/hugo-smorg/exampleSite/post/">Blog</a>
-
-			
-				<a class="navbar-item " href="/hugo-smorg/exampleSite/project/">Projects</a>
-
-			
-			</div>
-		</div>
-	</div>
-</nav>
-
+	</nav>
 
 
 <section class="section" itemscope itemtype="http://schema.org/WebPage">
@@ -53,9 +44,7 @@
 			<div class="column is-8 is-offset-2">
 				<article class="content">
 					<h1 class="title is-3">Creating a New Theme</h1>
-					
 
-					
 
 <h2 id="introduction">Introduction</h2>
 
@@ -1000,19 +989,10 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="don-t-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
-
-					<p class="has-text-grey-light is-6 is-pulled-right"><em>
- 
-	&mdash;
-<time datetime="2014-09-28">28 September 2014</time>
-
-
-	
-	tagged with 
+<p class="page-meta"><em>Posted 
+<time datetime="2014-09-28">28 September 2014</time>; tagged with 
 <a href="https://solutionroute.github.io/tags/theme">theme</a>,
 <a href="https://solutionroute.github.io/tags/hugo">hugo</a>
-
-
 </em></p>
 
 				</article>
@@ -1020,8 +1000,6 @@ $ vi themes/zafta/layouts/_default/single.html
 		</div>
 	</div>
 </section>
-
-
 <footer class="footer">
   <div class="container content">
 	<div class="has-text-centered">
@@ -1042,21 +1020,18 @@ $ vi themes/zafta/layouts/_default/single.html
 
 
 
-
 <script type="application/ld+json">
 { 
 	"@context": "http://schema.org", 
 	"@type": "WebPage",
 	"@id": "https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/",
-	"name": "Creating a New Theme", 
-	"description": "Michael Henderson explains how to create a simple Hugo theme from scratch.",
+	"name": "Creating a New Theme","description": "Michael Henderson explains how to create a simple Hugo theme from scratch.",
 	"author": { 
 		"@type": "Person", 
 		"name": "Michael Henderson"
-	}
+		}
 }
 </script>
-
 
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>

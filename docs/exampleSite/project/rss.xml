@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Hugo-smorg</title>
+    <link>https://solutionroute.github.io/hugo-smorg/exampleSite/project/</link>
+    <description>Recent content in Projects on Hugo-smorg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>thisemaildoesnotexist@www.example.com (Your Name)</managingEditor>
+    <webMaster>thisemaildoesnotexist@www.example.com (Your Name)</webMaster>
+    <copyright>&amp;copy; Your Name</copyright>
+    <lastBuildDate>Wed, 07 Mar 2018 02:16:58 -0800</lastBuildDate>
+    
+	<atom:link href="https://solutionroute.github.io/hugo-smorg/exampleSite/project/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Bulma Powered Blog Theme: Hugo-Smorg</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/project/hugo-smorg/</link>
+      <pubDate>Wed, 07 Mar 2018 02:16:58 -0800</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/project/hugo-smorg/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/solutionroute/hugo-smorg&#34;&gt;Hugo-smorg&lt;/a&gt; (smorg = small org, or smorgasbord perhaps) is a responsive
+mobile-first, &lt;a href=&#34;https://bulma.io/&#34;&gt;Bulma&lt;/a&gt;-powered, reasonably minimalistic theme for the &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;
+&lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt; static site generator.&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blorg Bread Baker</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/project/blorg-bread-machine/</link>
+      <pubDate>Sat, 03 Mar 2018 09:17:17 -0800</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/project/blorg-bread-machine/</guid>
+      <description>The hand-crafted Blorg Bread Baker&amp;trade; enhances any kitchen. Produced from 100% post-consumer recycled materials you&amp;rsquo;ll never once think&amp;hellip; wait a minute, I&amp;rsquo;m baking my bread in other people&amp;rsquo;s refuse.</description>
+    </item>
+    
+    <item>
+      <title>XYZ 1000 Replicator</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/project/xyz-1000/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 -0800</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/project/xyz-1000/</guid>
+      <description>With the XYZ 1000 Replicator you&amp;rsquo;ll never again be stuck with an empty kitchen and nothing for dinner!
+Features  It&amp;rsquo;s like a chef from 1,783,482,482 (and counting) planets in your kitchen!</description>
+    </item>
+    
+  </channel>
+</rss>
