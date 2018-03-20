@@ -18,7 +18,7 @@ summaryLength: 20
 pygmentsUseClasses: true
 pygmentsCodefencesGuessSyntax: true
 pygmentsCodefences: true
-paginate: 4  # you'll want a higher, reasonable number
+paginate: 2  # you'll want a higher, reasonable number
 
 
 # Access in templates via $.Site.Params.somevalue ------------------------
