@@ -1,0 +1,38 @@
+{{ define "nav" }}
+{{ partial "nav.html" . }}
+{{ end }}
+{{ define "main" }}
+<!-- use for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+	Each will be presented as a single page with a breadcrumb menu at the top
+	allowing for navigation among related pages in the section.
+
+-->
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/subsection.html</p>{{ end -}}
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+					{{ partial "section-crumbs.html" . }}
+				<article class="content">
+					<h1 class="title is-3">{{ .Title }}</h1>
+					{{- partial "page-status.html" . }}
+					{{- .Content }}
+					{{- partial "page-meta.html" . }}
+
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{- end }}
+{{ define "footer" }}
+{{- partial "footer" . }}
+{{ end }}
