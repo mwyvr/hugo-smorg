@@ -2,7 +2,7 @@
   {{ partial "nav.html" . }}
 {{ end }}
 {{ define "main" }}
-{{ if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/section.html</p>{{end}}
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/section.html</p>{{ end -}}
 <section class="section" itemscope itemtype="http://schema.org/AboutPage">
 	<div class="container">
 		<div class="columns">

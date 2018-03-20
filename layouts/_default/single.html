@@ -2,6 +2,7 @@
 {{ partial "nav.html" . }}
 {{ end }}
 {{ define "main" }}
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/single.html</p>{{ end -}}
 <section class="section" itemscope itemtype="http://schema.org/WebPage">
 	<div class="container">
 		<div class="columns">
@@ -11,6 +12,7 @@
 					{{- partial "page-status.html" . }}
 					{{- .Content }}
 					{{- partial "page-meta.html" . }}
+
 				</article>
 			</div>
 		</div>

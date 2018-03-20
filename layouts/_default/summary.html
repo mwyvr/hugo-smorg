@@ -1,4 +1,4 @@
-{{ if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/summary.html</p>{{end}}
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/summary.html</p>{{ end -}}
 <article>
     <header>
 		<h1 class="title is-4"><a href="{{ .Permalink }}">{{ .Title }}</a> </h1>
