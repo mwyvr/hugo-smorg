@@ -1,4 +1,25 @@
-# Hugo-smorg Changelog
+# Hugo-smorg Changelog & TODO List
+
+## TODO
+
+Review internal templates.
+https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/template_embedded.go
+
+* Add Social Media microdata (Twitter, etc.)
+* Google analytics and other quick hit items
+* Improve Article layout re Categories, Tags (also dates, authors, etc)
+* Develop a text-minimalist Bulma swatch
+* Make it easy to include a full-screen landing page image without modifying
+  templates such as found: https://mikewatkins.ca/
+
+## HEAD 
+
+* \_default/subsection.html allows for a section like /about/ with a handful of
+  files /about/contact.md /about/legal.md to be rendered as a crumb menu at
+  top of each page in the section. Add `layout: subsection` in each document
+  front-matter (including \_index.md).
+* Included handy value debugprint, thanks @kaushalmodi
+* In config set debug: true ; helps diagnose template lookup order issues
 
 ## v0.5
 
