@@ -23,15 +23,5 @@
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic.</description>
     </item>
     
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
-      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.</description>
-    </item>
-    
   </channel>
 </rss>

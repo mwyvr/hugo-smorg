@@ -8,16 +8,6 @@
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/project/hugo-smorg/</loc>
     <lastmod>2018-03-07T02:16:58-08:00</lastmod>
   </url>
@@ -48,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
@@ -55,6 +50,11 @@
   <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -87,19 +87,25 @@
   </url>
   
   <url>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/examplesite/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/golang/</loc>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</loc>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/howto/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -124,7 +130,7 @@
   
   <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-10T17:23:09-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,7 +166,7 @@
   
   <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-07T02:16:58-08:00</lastmod>
     <priority>0</priority>
   </url>
   

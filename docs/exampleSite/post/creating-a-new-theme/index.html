@@ -43,6 +43,11 @@
 			<div class="column is-8 is-offset-2">
 				<article class="content">
 					<h1 class="title is-3">Creating a New Theme</h1>
+					<p class="subtitle is-6 has-text-grey"><em>Posted 
+<time datetime="2014-09-28">28 September 2014</time>; tagged with 
+<a href="https://solutionroute.github.io/hugo-smorg/exampleSite/tags/hugo">hugo</a>,
+<a href="https://solutionroute.github.io/hugo-smorg/exampleSite/tags/theme">theme</a>
+</em></p>
 
 
 <h2 id="introduction">Introduction</h2>
@@ -679,20 +684,20 @@ $</pre></div>
 <p>Please see the Hugo documentation on template rendering for all the details on determining which template to use. And, as the docs mention, if you&rsquo;re building a single page application (SPA) web site, you can delete all of the other templates and work with just the default single page. That&rsquo;s a refreshing amount of joy right there.</p>
 
 <h4 id="update-the-template-file">Update the Template File</h4>
-<div class="highlight"><pre class="chroma">$ vi themes/zafta/layouts/_default/single.html 
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;{{ .Title }}&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">$ vi themes/zafta/layouts/_default/single.html 
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p"></span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p"></span><span class="p">&gt;</span>{{ .Title }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p"></span><span class="p">&gt;</span>{{ .Title }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
   {{ .Content }}
-&lt;/body&gt;
-&lt;/html&gt;
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
 :wq
 
-$</pre></div>
+$</code></pre></div>
 <p>Build the web site and verify the results.</p>
 <div class="highlight"><pre class="chroma">$ rm -rf public
 $ hugo --verbose
@@ -988,11 +993,6 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="don-t-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
-<p class="page-meta"><em>Posted 
-<time datetime="2014-09-28">28 September 2014</time>; tagged with 
-<a href="https://solutionroute.github.io/tags/theme">theme</a>,
-<a href="https://solutionroute.github.io/tags/hugo">hugo</a>
-</em></p>
 
 
 				</article>

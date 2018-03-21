@@ -9,28 +9,10 @@
     <managingEditor>thisemaildoesnotexist@www.example.com (Your Name)</managingEditor>
     <webMaster>thisemaildoesnotexist@www.example.com (Your Name)</webMaster>
     <copyright>&amp;copy; Your Name</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Mar 2018 17:23:09 -0800</lastBuildDate>
     
 	<atom:link href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/rss.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
-      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
-      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output.</description>
-    </item>
     
     <item>
       <title>Syntax Highlighting</title>
@@ -43,6 +25,15 @@ the current &lt;a href=&#34;https://github.com/solutionroute/hugo-smorg&#34;&gt;
 Inline code looks like &lt;code&gt;this-&amp;gt;var&lt;/code&gt; and &lt;code&gt;expand($flurb, $times)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content.</description>
     </item>
     
     <item>
@@ -62,6 +53,15 @@ Inline code looks like &lt;code&gt;this-&amp;gt;var&lt;/code&gt; and &lt;code&gt
       <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/post/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output.</description>
     </item>
     
   </channel>

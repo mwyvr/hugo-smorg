@@ -51,11 +51,11 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/golang/</link>
+      <title>Howto</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/howto/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
-      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/golang/</guid>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/howto/</guid>
       <description></description>
     </item>
     
@@ -98,7 +98,7 @@
     <item>
       <title>Theme</title>
       <link>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Mar 2018 02:16:58 -0800</pubDate>
       <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
       <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/tags/theme/</guid>
       <description></description>

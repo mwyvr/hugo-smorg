@@ -23,6 +23,15 @@
     </item>
     
     <item>
+      <title>Examplesite</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/examplesite/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/examplesite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Golang</title>
       <link>https://solutionroute.github.io/hugo-smorg/exampleSite/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
