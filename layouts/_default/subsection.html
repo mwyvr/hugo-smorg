@@ -23,10 +23,8 @@
 					{{ partial "section-crumbs.html" . }}
 				<article class="content">
 					<h1 class="title is-3">{{ .Title }}</h1>
-					{{- partial "page-status.html" . }}
+					{{- partial "page-status.html" . -}}
 					{{- .Content }}
-					{{- partial "page-meta.html" . }}
-
 				</article>
 			</div>
 		</div>
