@@ -1,13 +1,15 @@
 # hugo-smorg 
 
-[**Demo site**](https://solutionroute.github.io/hugo-smorg/exampleSite/)
+[**Demo site**:exampleSite][]  
 **Author's Site**:[https://mikewatkins.ca/](https://mikewatkins.ca/)
 
 Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
 [Bulma][]-powered, reasonably minimalistic [Hugo](https://gohugo.io/) theme
 for an individual blogger or a small organization to adapt as need be.
 
-**Current release**: v0.6, March 20 2018 - see [CHANGELOG](CHANGELOG.md).
+**Current release**: v0.6, March 20 2018 - see [CHANGELOG](CHANGELOG.md); this
+project is being updated daily at present - following HEAD is best. If you are
+using the theme and spot issues please let me know or submit a PR.
 
 An ongoing work in progress, I'm using it as a base for other projects. Maybe
 you will too.  If you use it, let me know; send a screenshot and a _sites using
@@ -19,7 +21,7 @@ this theme_ page will emerge.
 * Keep pace with current [Hugo][] features and practicies.
 * Keep customizability effort low via SASS / CSS and a logical config.yaml.
 * Achieve good [page load
-  speed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsolutionroute.github.io%2Fhugo-smorg%2FexampleSite%2F) ranking without dwelling on it overly so.
+  speed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsolutionroute.github.io%2Fhugo-smorg%2FexampleSite%2F) ranking without dwelling on it overly so. Currently 85 - 87 Mobile, 93 - 95 Desktop, entirely respectable. 
 
 ## Features
 
@@ -45,6 +47,8 @@ And offers:
 
 <img src="https://raw.githubusercontent.com/solutionroute/hugo-smorg/master/images/tn.png" width="900" height="600" style="border: 1px solid grey">
 
+See the [demo site][] for a live view.
+
 ## Installation
 
 1. Clone the repo:
@@ -68,6 +72,6 @@ This will install the dependencies listed in _package.json_ including Bulma and
 node-sass. You'll also find some handy run scripts including `npm run dev`
 which will build your site and SCSS/CSS files and reload automatically.
 
-
+[Demo site]: https://solutionroute.github.io/hugo-smorg/exampleSite/
 [Bulma]: https://bulma.io/ 
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
