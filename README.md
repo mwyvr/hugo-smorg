@@ -18,6 +18,8 @@ this theme_ page will emerge.
 * Remain easy to understand.
 * Keep pace with current [Hugo][] features and practicies.
 * Keep customizability effort low via SASS / CSS and a logical config.yaml.
+* Achieve good [page load
+  speed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsolutionroute.github.io%2Fhugo-smorg%2FexampleSite%2F) ranking without dwelling on it overly so.
 
 ## Features
 
