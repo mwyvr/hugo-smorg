@@ -1,7 +1,7 @@
 # hugo-smorg 
 
-[**Demo site**:exampleSite][]  
-**Author's Site**:[https://mikewatkins.ca/](https://mikewatkins.ca/)
+* Demo site: https://solutionroute.github.io/hugo-smorg/exampleSite/
+* Author's Site: [https://mikewatkins.ca/](https://mikewatkins.ca/)
 
 Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
 [Bulma][]-powered, reasonably minimalistic [Hugo](https://gohugo.io/) theme
@@ -20,8 +20,6 @@ this theme_ page will emerge.
 * Remain easy to understand.
 * Keep pace with current [Hugo][] features and practicies.
 * Keep customizability effort low via SASS / CSS and a logical config.yaml.
-* Achieve good [page load
-  speed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsolutionroute.github.io%2Fhugo-smorg%2FexampleSite%2F) ranking without dwelling on it overly so. Currently 85 - 87 Mobile, 93 - 95 Desktop, entirely respectable. 
 
 ## Features
 
@@ -34,14 +32,14 @@ Hugo-smorg is:
 
 And offers:
 
-* Simple "Subsection" pages easily implemented
-* Breadcrumb-menu available for subsection layout, others.
+* Simple "Subsection" pages possible with layout:subsection in front-matter.
+* Breadcrumb-menu in subsection layout, available to others.
 * Produces Atom syndication format with option to disable RSS.
-* Category and Tag taxonomies.
-* Themed pagination.
-* Includes syntax highlighting with a choice of themes.
+* Category and Tag taxonomies (partial page-meta)
+* Themed mobile-friendly pagination.
+* Includes syntax highlighting with a choice of colour themes.
 * By default uses zero-wait modern system font stacks; integration with
-  a webfont easily done.
+  a webfont via a couple lines of SASS and `npm run scss:min`.
 
 ## Screenshot
 
@@ -72,6 +70,6 @@ This will install the dependencies listed in _package.json_ including Bulma and
 node-sass. You'll also find some handy run scripts including `npm run dev`
 which will build your site and SCSS/CSS files and reload automatically.
 
-[Demo site]: https://solutionroute.github.io/hugo-smorg/exampleSite/
+[demo site]: https://solutionroute.github.io/hugo-smorg/exampleSite/
 [Bulma]: https://bulma.io/ 
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
