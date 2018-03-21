@@ -1,7 +1,5 @@
-<p class="page-meta"><em>
 {{- if eq .Type "post" -}} 
 	Posted {{ partial "page-date.html" . -}}
-	{{- with .Params.categories }}, in {{ partial "page-categories.html" . }}{{ end }}
+	{{- with .Params.categories }} in {{ partial "page-categories.html" . }}{{ end }}
 	{{- with .Params.tags }}; tagged with {{ partial "page-tags.html" . }}{{ end }}
 {{- end -}}
-</em></p>
