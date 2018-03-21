@@ -1,25 +1,35 @@
-# hugo-smorg
+# hugo-smorg 
 
-This is a responsive mobile-first [Bulma][]-powered, reasonably minimalistic
-[Hugo](https://gohugo.io/) theme suitable for an individual or small
-organization to adapt as need be.
+[**Demo site**](https://solutionroute.github.io/hugo-smorg/exampleSite/)
+**Author's Site**:[https://mikewatkins.ca/](https://mikewatkins.ca/)
 
-This theme will keep pace with current Hugo features and is under active
-development (March 2018). An ongoing work in progress, I'm using it as a base
-for other projects.
+Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
+[Bulma][]-powered, reasonably minimalistic [Hugo](https://gohugo.io/) theme
+for an individual blogger or a small organization to adapt as need be.
 
-Current release: v0.5, March 19 2018 - see [CHANGELOG](CHANGELOG.md).
+**Current release**: v0.6, March 20 2018 - see [CHANGELOG](CHANGELOG.md).
 
-[**Demo site**](https://solutionroute.github.io/hugo-smorg/exampleSite/).
+An ongoing work in progress, I'm using it as a base for other projects. Maybe
+you will too.  If you use it, let me know; send a screenshot and a _sites using
+this theme_ page will emerge.
+
+## Objectives
+
+* Remain easy to understand.
+* Keep pace with current [Hugo][] features and practicies.
+* Keep customizability effort low via SASS / CSS and a logical config.yaml.
 
 ## Features
 
 Hugo-smorg is:
 
-* Easy to understand.
-* Mobile first, thanks [Bulma][]!
+* Mobile first thanks to [Bulma][], a SASS CSS framework alternative to
+  Bootstrap.
 * Themable itself via [Bulmaswatch][].
-* Minimalistic in nature, easily made more, or less, complicated.
+* Minimalistic in nature. 
+
+And offers:
+
 * Simple "Subsection" pages easily implemented
 * Breadcrumb-menu available for subsection layout, others.
 * Produces Atom syndication format with option to disable RSS.
