@@ -12,7 +12,7 @@
 			<div class="navbar-menu" id="navMenu">
 				<div class="navbar-end">
 				{{- range .Site.Menus.sectionmenu }}
-					<a class="navbar-item {{if or ($currentPage.IsMenuCurrent "sectionmenu" .) ($currentPage.HasMenuCurrent "sectionmenu" .) }} is-active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+					<a class="navbar-item {{if or ($currentPage.IsMenuCurrent "sectionmenu" .) ($currentPage.HasMenuCurrent "sectionmenu" .) }} is-active{{end}}" href="{{ .URL | absURL }}">{{ .Name }}</a>
 				{{ end }}
 				</div>
 			</div>
