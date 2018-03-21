@@ -46,15 +46,18 @@ params:
 
 menu:
     sectionmenu:
+        - name: "About"
+          url: "/about/"
+          weight: 10
         - name: "Projects"
           url: "/project/"
           identifier: "project"
-          weight: -10
+          weight: 20
         - name: "Blog"
           url: "/post/"
-          weight: -30
-        # About and other single pages not within a section folder are 
-        # added to this menu in front matter of the document i.e. about.md
+          weight: 30
+        # Other single pages not within a section folder can be  
+        # added to this menu in front matter of the document i.e. contact.md
 
 # Syndication feeds atom.xml and rss.xml ---------------------------------
 # Adds Atom feed support in conjunction with /layouts/index.atom.xml
