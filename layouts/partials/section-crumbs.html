@@ -1,25 +1,32 @@
 <!-- Provides a crumb (horizontal) or formatted vertical navigation 
-     listing for the nodes in the current section, except for "post".
+	 listing for the nodes in the current section. You'd not want to include
+	 this in a section with a large collection (like a /blog/).
 
 	 See layouts/_default/subsection.html for a use case
 
-	 CSS classes are for Bulma.
--->
+	 CSS classes are for Bulma but are generic enough they may just work elsewhere.  -->
 
-<!-- $currentNode and .CurrentSection (and $section in the loop) are Page objects, not strings -->
+<!-- $currentNode and .CurrentSection (and $section in the loop) are all Page
+	objects, not strings, and therefore can be tested for equality -->
+
 {{- $currentNode := . }}
 <nav class="breadcrumb" aria-label="breadcrumbs">
 	<ul>
 {{- range $index, $section := .Site.Sections }}
 	{{- if eq $section $currentNode.CurrentSection }}
+
 		<li {{ if eq $section.URL $currentNode.URL }}class="is-active"{{ end }}>
-			<a href="{{ $section.URL }}"{{ if eq $section.URL $currentNode.URL }} aria-current="page"{{end}}>{{ $section.Slug | default $section.Name | title}}</a>
+			<a href="{{ $section.URL }}"{{ if eq $section.URL $currentNode.URL }} 
+				aria-current="page"{{end}}>{{ $section.Slug | default $section.Name | title}}</a>
 		</li>
+
 		{{- range $i, $page := $section.Pages }}
-		<li {{ if eq $page.URL $currentNode.URL }}class="is-active"{{ end }}>
-			<a href="{{ $page.URL }}"{{ if eq $page.URL $currentNode.URL }} aria-current="page"{{end}}>{{ $page.Slug | default $page.Name | title }}</a>
-		</li>
+			<li {{ if eq $page.URL $currentNode.URL }}class="is-active"{{ end }}>
+				<a href="{{ $page.URL }}"{{ if eq $page.URL $currentNode.URL }} 
+					aria-current="page"{{end}}>{{ $page.Slug | default $page.Name | title }}</a>
+			</li>
 		{{- end }}
+
 	{{- end }}
 {{- end }}
 	</ul>
