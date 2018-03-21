@@ -22,7 +22,7 @@
 							{{ range first 5 (where .Data.Pages "Section" "post") }}
 							<li><a href="{{.Permalink}}"><span class="icon"><i class="far fa-file"></i></span>{{ .Title }}</a></li>
 							{{ end }}
-							<li><a href="{{ "/post/" | absURL}}">More posts 
+							<li><a href="{{ "post/" | absURL}}">More posts 
 									<i class="far fa-arrow-alt-circle-right"></i></a></li>
 							</ul>
 						</div>
@@ -32,7 +32,7 @@
 							{{ range first 5 (where .Data.Pages "Section" "project") }}
 							<li><a href="{{.Permalink}}"><span class="icon"><i class="far fa-folder"></i></span>{{ .Title }}</a></li>
 							{{ end }}
-							<li><a href="{{ "/project/" | absURL }}">More projects 
+							<li><a href="{{ "project/" | absURL }}">More projects 
 									<i class="far fa-arrow-alt-circle-right"></i></a></li>
 							</ul>
 						</div>
