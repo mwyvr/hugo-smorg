@@ -15,11 +15,11 @@
     
     
     <item>
-      <title>About</title>
-      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</link>
+      <title>About Hugo</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/</link>
       <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
-      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</guid>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/</guid>
       <description>hugo-smorg is a theme for Hugo, the blazingly fast super flexible static site engine.
 See the project page: https://github.com/solutionroute/hugo-smorg, and</description>
     </item>

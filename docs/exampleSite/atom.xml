@@ -10,9 +10,9 @@
   </author>
   <generator>Hugo -- gohugo.io</generator>
   <entry>
-	<title>About</title>
-    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/"/>
-    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</id>
+	<title>About Hugo</title>
+    <link href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/"/>
+    <id>https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/</id>
     <published>2018-03-01T00:00:00+00:00</published>
     <updated>2018-03-01T00:00:00+00:00</updated>
 	<content type="html"><![CDATA[hugo-smorg is a theme for Hugo, the blazingly fast super flexible static site engine.

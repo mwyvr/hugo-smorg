@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About- Demo of Subsection Layout on Hugo-smorg</title>
+    <link>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</link>
+    <description>Recent content in About- Demo of Subsection Layout on Hugo-smorg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>thisemaildoesnotexist@www.example.com (Your Name)</managingEditor>
+    <webMaster>thisemaildoesnotexist@www.example.com (Your Name)</webMaster>
+    <copyright>&amp;copy; Your Name</copyright>
+    <lastBuildDate>Wed, 07 Mar 2018 02:16:58 -0800</lastBuildDate>
+    
+	<atom:link href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Hugo</title>
+      <link>https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <author>thisemaildoesnotexist@www.example.com (Your Name)</author>
+      <guid>https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/</guid>
+      <description>hugo-smorg is a theme for Hugo, the blazingly fast super flexible static site engine.
+See the project page: https://github.com/solutionroute/hugo-smorg, and</description>
+    </item>
+    
+  </channel>
+</rss>

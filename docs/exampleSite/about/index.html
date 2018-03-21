@@ -7,7 +7,9 @@
 	<base href="https://solutionroute.github.io/hugo-smorg/exampleSite/">
 	<link rel="stylesheet" href="https://solutionroute.github.io/hugo-smorg/exampleSite/css/smorg.css">
 	<link rel="canonical" href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/">
-	<title>About - Hugo-smorg</title>
+	<link rel="alternate" type="application/rss" 
+	      href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/rss.xml" title="Hugo-smorg">
+	<title>About- Demo of Subsection Layout - Hugo-smorg</title>
 	<meta name="description" content="160 characters or less describing you or your organization or your site&#39;s purpose.">
 </head>
 
@@ -26,49 +28,67 @@
 			</div>
 			<div class="navbar-menu" id="navMenu">
 				<div class="navbar-end">
-					<a class="navbar-item  is-active" href="/hugo-smorg/exampleSite/about/">About</a>
+					<a class="navbar-item  is-active" href="https://solutionroute.github.io/hugo-smorg/exampleSite/about/">About</a>
 				
-					<a class="navbar-item " href="/hugo-smorg/exampleSite/post/">Blog</a>
+					<a class="navbar-item " href="https://solutionroute.github.io/hugo-smorg/exampleSite/project/">Projects</a>
 				
-					<a class="navbar-item " href="/hugo-smorg/exampleSite/project/">Projects</a>
+					<a class="navbar-item " href="https://solutionroute.github.io/hugo-smorg/exampleSite/post/">Blog</a>
 				
 				</div>
 			</div>
 		</div>
 	</nav>
 
+
 <section class="section" itemscope itemtype="http://schema.org/WebPage">
 	<div class="container">
 		<div class="columns">
 			<div class="column is-8 is-offset-2">
+					
+
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+	<ul>
+		<li class="is-active">
+			<a href="/hugo-smorg/exampleSite/about/" aria-current="page">About</a>
+		</li>
+		<li >
+			<a href="/hugo-smorg/exampleSite/about/hugo/">About Hugo</a>
+		</li>
+	</ul>
+</nav>
+
 				<article class="content">
-					<h1 class="title is-3">About</h1>
-
-
-<p><a href="https://solutionroute.github.io/hugo-smorg/">hugo-smorg</a> is a theme for
-<a href="https://gohugo.io/">Hugo</a>, the blazingly fast super flexible static site
-engine.</p>
-
-<p>See the project page: <a href="https://github.com/solutionroute/hugo-smorg">https://github.com/solutionroute/hugo-smorg</a>, and<br />
-the demo site: <a href="https://solutionroute.github.io/hugo-smorg/exampleSite/">https://solutionroute.github.io/hugo-smorg/exampleSite/</a><br />
-for more information.</p>
-
-<p>Go Hugo!</p>
-
-<h2 id="hugo">Hugo</h2>
-
-<p>Hugo is a static site engine written in Go.</p>
-
-<p>It makes use of a variety of open source projects including:</p>
+					<h1 class="title is-3">About- Demo of Subsection Layout</h1>
+<p>This example &ldquo;about&rdquo; page illustrates two features included in Hugo-Smorg:</p>
 
 <ul>
-<li><a href="https://github.com/spf13/cobra">Cobra</a></li>
-<li><a href="https://github.com/spf13/viper">Viper</a></li>
-<li><a href="https://github.com/spf13/jWalterWeatherman">J Walter Weatherman</a></li>
-<li><a href="https://github.com/spf13/cast">Cast</a></li>
+<li>subsection.html</li>
+<li>breadcrumbs</li>
 </ul>
 
-<p>Learn more and contribute on <a href="https://github.com/gohugoio">GitHub</a>.</p>
+<p>If you find a need for a layout like:</p>
+<div class="highlight"><pre class="chroma">/about/
+/about/board-of-directors
+/about/legal</pre></div>
+<p>Or:</p>
+<div class="highlight"><pre class="chroma">/about/
+/about/kady-the-wonderdog</pre></div>
+<p>Then <code>_default/subsection.html</code> and <code>partials/section-crumbs.html</code> may be just
+what you need. To use simply add the following to your front-matter in all
+content below, for example, &ldquo;about&rdquo; including its <code>_index.html</code>:</p>
+<div class="highlight"><pre class="chroma">---
+layout: subsection
+---</pre></div>
+<p>By default the link title is the Page&rsquo;s title (.Name); long titles won&rsquo;t work
+well; you can supply <code>slug</code> in font-matter to override:</p>
+<div class="highlight"><pre class="chroma">---
+slug: board
+---</pre></div>
+<p><strong>Note</strong>: <code>slug</code> will affect your Page&rsquo;s URL. Oftentimes this may be in line
+with what you want for a breadcrumb-appropriate menu.</p>
+
+<p>Get the theme here: <a href="https://github.com/solutionroute/hugo-smorg">https://github.com/solutionroute/hugo-smorg</a>.</p>
 <p class="page-meta"><em></em></p>
 
 
@@ -102,7 +122,7 @@ for more information.</p>
 	"@context": "http://schema.org", 
 	"@type": "WebPage",
 	"@id": "https://solutionroute.github.io/hugo-smorg/exampleSite/about/",
-	"name": "About","description": "About the Hugo-smorg Example Site"
+	"name": "About- Demo of Subsection Layout","description": "Demonstration of Hugo content management approach for subsection pages and associated breadcrumb menu."
 }
 </script>
 

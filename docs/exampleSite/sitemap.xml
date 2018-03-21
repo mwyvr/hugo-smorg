@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</loc>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/about/hugo/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -25,6 +25,11 @@
   <url>
     <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/post/syntax-highlighting/</loc>
     <lastmod>2018-03-10T17:23:09-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://solutionroute.github.io/hugo-smorg/exampleSite/about/</loc>
+    <lastmod>2018-03-07T02:16:58-08:00</lastmod>
   </url>
   
   <url>
