@@ -14,6 +14,8 @@ https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/template_embedded.go
 
 ## HEAD 
 
+* Refactored breadcrumbs, simpler and hopefully solid now; uses .Slug or .Name; override in menus.
+* Fixed URL bug noted on Github demo site; certain URLs needed absURL or relURL
 * \_default/subsection.html allows for a section like /about/ with a handful of
   files /about/contact.md /about/legal.md to be rendered as a crumb menu at
   top of each page in the section. Add `layout: subsection` in each document

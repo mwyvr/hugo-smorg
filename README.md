@@ -20,6 +20,8 @@ Hugo-smorg is:
 * Mobile first, thanks [Bulma][]!
 * Themable itself via [Bulmaswatch][].
 * Minimalistic in nature, easily made more, or less, complicated.
+* Simple "Subsection" pages easily implemented
+* Breadcrumb-menu available for subsection layout, others.
 * Produces Atom syndication format with option to disable RSS.
 * Category and Tag taxonomies.
 * Themed pagination.
