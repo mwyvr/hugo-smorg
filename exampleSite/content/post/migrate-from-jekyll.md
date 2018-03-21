@@ -1,11 +1,9 @@
 ---
 date: 2014-03-10
 linktitle: Migrating from Jekyll
-menu:
-  main:
-    parent: tutorials
 title: Migrate to Hugo from Jekyll
-weight: 10
+categories:
+- exampleSite
 ---
 
 ## Move static content to `static`

@@ -5,8 +5,9 @@ linktitle: Creating a New Theme
 title: Creating a New Theme
 description: Michael Henderson explains how to create a simple 
              Hugo theme from scratch.
-tags: ['theme','hugo']
-weight: 10
+tags:
+- theme
+- hugo
 ---
 
 ## Introduction
@@ -759,7 +760,7 @@ Please see the Hugo documentation on template rendering for all the details on d
 
 #### Update the Template File
 
-```
+```html
 $ vi themes/zafta/layouts/_default/single.html 
 <!DOCTYPE html>
 <html>

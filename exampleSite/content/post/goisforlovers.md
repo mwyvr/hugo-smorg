@@ -6,7 +6,6 @@ date: 2014-04-02
 menu: main
 tags:
 - go
-- golang
 - templates
 - themes
 - development
