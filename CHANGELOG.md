@@ -11,6 +11,9 @@
 
 ## HEAD 
 
+* Removed Font Awesome; nothing wrong with it but for a handful of icons,
+  leaving that decision up to site users. Unicode icons used where needed.
+* Added favicon.html partial and Params.favicon boolean - make a matching icon set from the solid https://realfavicongenerator.net/
 * Moved page-meta partial to subtitle - see Posts for example.
 * Fixed URL path bug on pages with categories and tags; sorted collections.
 * Refactored breadcrumbs, simpler and hopefully solid now; uses .Slug or .Name; override in menus.
