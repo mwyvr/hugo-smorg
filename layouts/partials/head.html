@@ -7,16 +7,18 @@ References config file variables:
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
 	<base href="{{ .Site.BaseURL }}">
-	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}">
+	<link rel="preload" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}" as="style">
 	{{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">
-	{{- range .AlternativeOutputFormats }}
-	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
-	      href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">{{ end }}
-	{{- end }}
     {{- if .IsHome }}
 	<title>{{ .Site.Title | default "Set Site Title in config.yaml" }}</title>
 	{{ else }}
 	<title>{{ .Title | default "Set Title in doc" }} - {{ .Site.Title }}</title>
 	{{ end }}
 	{{- with $.Site.Params.description }}<meta name="description" content="{{.}}">{{ end }}
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
+	      href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">{{ end }}
+	{{- end }}
+	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}">
+	{{- partial "favicon.html" . -}}
 </head>
