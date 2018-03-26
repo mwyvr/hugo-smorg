@@ -1,10 +1,7 @@
-[submodule "chroma-sass-themes"]
-	path = scss/chroma-sass-themes
-	url = git@github.com:solutionroute/chroma-sass-themes.git
-[submodule "scss/system-font-css"]
-	path = scss/system-font-css
-	url = https://github.com/jonathantneal/system-font-css.git
 [submodule "scss/bulmaswatch"]
 	path = scss/bulmaswatch
 	url = git@github.com:solutionroute/bulmaswatch.git
 	branch = gh-pages
+[submodule "scss/chroma-sass-themes"]
+	path = scss/chroma-sass-themes
+	url = https://github.com/solutionroute/chroma-sass-themes.git
