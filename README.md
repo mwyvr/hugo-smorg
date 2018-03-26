@@ -4,7 +4,7 @@
 * Author's Site: [https://mikewatkins.ca/](https://mikewatkins.ca/)
 
 Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
-[Bulma][]-powered, reasonably minimalistic [Hugo](https://gohugo.io/) theme
+[Bulma][]-powered, reasonably minimalistic [Hugo][] (https://gohugo.io/) theme
 for an individual blogger or a small organization to adapt as need be.
 
 **Current release**: v0.6, March 20 2018 - see [CHANGELOG](CHANGELOG.md); this
@@ -70,6 +70,7 @@ This will install the dependencies listed in _package.json_ including Bulma and
 node-sass. You'll also find some handy run scripts including `npm run dev`
 which will build your site and SCSS/CSS files and reload automatically.
 
+[Hugo]: https://gohugo.io/
 [demo site]: https://solutionroute.github.io/hugo-smorg/exampleSite/
 [Bulma]: https://bulma.io/ 
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
