@@ -7,7 +7,6 @@ References config file variables:
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
 	<base href="{{ .Site.BaseURL }}">
-	<link rel="preload" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}" as="style">
 	{{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">
     {{- if .IsHome }}
 	<title>{{ .Site.Title | default "Set Site Title in config.yaml" }}</title>
@@ -19,6 +18,8 @@ References config file variables:
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
 	      href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">{{ end }}
 	{{- end }}
+	<link rel="preload" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}" as="style">
 	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}">
-	{{- partial "favicon.html" . -}}
+	{{ .Hugo.Generator -}}
+	{{- partial "favicon.html" . }}
 </head>
