@@ -1,0 +1,14 @@
+<!-- filter-html.html
+	Intended to be used for filtering content to be included in RSS and Atom feeds.
+
+	It'd be nice if Hugo grew attributes (a slice of attributes) that safeHTML would drop.
+
+	Filter HTML content to remove:
+	- script tags
+	- extra \n<p></p> at end of summary, produced by Summary
+	- style attributes
+-->
+{{- $noscript := replaceRE `<script.*?>(.|\n)*?</script>` "" . }} 
+{{- $noscript := replaceRE `(<.*?) (style=".*?")` "$1 " $noscript }}
+{{- $noscript := replaceRE `\n<p></p>$` "" $noscript }}
+{{ $noscript | safeHTML }}
