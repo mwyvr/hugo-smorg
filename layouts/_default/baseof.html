@@ -8,8 +8,7 @@
 {{ end }}
 {{- block "footer" . }}
 {{ end }}
-{{- partial "microdata/json-ld.html" . }}
-{{- partial "js.html" . }}
-{{ if eq .Kind "404" }}{{- partial "js404.html" . }}{{ end }}
+{{- if ne .Kind "404" }}{{- partial "microdata/json-ld.html" . }}{{ end -}}
+{{- partial "js-menu.html" . }}
 </body>
 </html>
