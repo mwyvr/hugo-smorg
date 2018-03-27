@@ -9,9 +9,9 @@
 			<div class="column is-8 is-offset-2">
 				<article class="content">
 					<h1 class="title has-text-danger">Page Not Found</h1>
+					<p class="subtitle">The URL you've requested cannot be found on this web site.</p>
 					<p><code id="errorurl"></code></p>
-					<p>We're sorry, but the URL you've requested
-					cannot be found on this web site.</p><p>Sections of this site include:</p>
+					<p>Sections of this site include:</p>
 					<ul>
 						<li><a href="{{ $.Site.BaseURL }}">Home</a></li>
 			{{ range .Site.Menus.sectionmenu }}
@@ -23,5 +23,8 @@
 		</div>
 	</div>
 </section>
+{{- partial "js-errorurl.html" . }}
 {{ end }}
-
+{{ define "footer" }}
+{{- partial "footer" . }}
+{{ end }}
