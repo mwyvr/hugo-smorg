@@ -11,6 +11,13 @@
 
 ## HEAD 
 
+* layouts/_defaults/errorpage.html - allows for creation of NNN HTTP errorcode
+  pages i.e. 401.html (with 401.md). In frontmatter specify layout:errorpage
+* Added /shortcodes/ig.html as a script-less instagram alternative. May
+  disappear.
+* Added partials/filter-html.html, used in index.atom.xml to filter script tags
+  among other things from .Summary and .Content for feed validation (and
+  safety).
 * Replace submodules so they can be cloned anonymously via https, thanks L0g4n
 * Removed Font Awesome; nothing wrong with it but for a handful of icons,
   leaving that decision up to site users. Unicode icons used where needed. See
