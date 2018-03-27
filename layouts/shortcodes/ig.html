@@ -1,0 +1,21 @@
+<!-- Based on Hugo internal instagram shortcode template 
+	See: https://www.instagram.com/developer/embedding/
+-->
+{{ with getJSON "https://api.instagram.com/oembed?url=http://instagr.am/p/" (index .Params 0) }}
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title iis-5">{{ .title }}</p>
+	</header>
+  <div class="card-image">
+	<figure class="image"><img src="{{ .thumbnail_url}}"></figure>
+  </div>
+  <div class="card-content">
+	<div class="media">
+	  <div class="content">
+		  <p class="ssubtitle xis-6"><a href="{{ .author_url }}">@{{ .author_name }}</a> &middot; <em><a href="{{ .provider_url }}">{{ .provider_name }}</a></em></p>
+	  </div>
+	</div>
+  </div>
+</div>
+{{ end }}
+
