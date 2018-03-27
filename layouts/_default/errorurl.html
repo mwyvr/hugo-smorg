@@ -1,0 +1,24 @@
+{{ define "nav" }}
+{{ partial "nav.html" . }}
+{{ end }}
+{{ define "main" }}
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/errorurl.html</p>{{ end -}}
+<section class="section" itemscope itemtype="http://schema.org/WebPage">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<article class="content">
+					<h1 class="title has-text-danger">{{ .Title }}</h1>
+					<p class="subtitle">The URL you've requested requires authorization</p>
+					<p><code id="errorurl"></code></p>
+					{{ .Content }}
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+{{- end }}
+{{ define "footer" }}
+{{- partial "footer" . }}
+{{- partial "js-errorurl.html" . }}
+{{ end }}
