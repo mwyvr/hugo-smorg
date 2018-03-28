@@ -13,6 +13,7 @@ author:
     name: "Your Name"
     email: "thisemaildoesnotexist@www.example.com"
 copyright: "&copy; Your Name"
+# GoogleAnalytics: # add your GA ID and uncomment
 enableGitInfo: false
 summaryLength: 20
 pygmentsUseClasses: true
