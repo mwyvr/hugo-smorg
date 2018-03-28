@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
 {{- partial "head.html" . }}
+{{- if not .Site.BuildDrafts }}
 {{- template "_internal/google_analytics_async.html" . }}
+{{- end }}
 <body>
 {{- block "nav" . }}
 {{ end }}
