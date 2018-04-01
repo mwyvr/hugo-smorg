@@ -48,14 +48,14 @@ params:
 menu:
     sectionmenu:
         - name: "About"
-          url: "/about/"
+          url: "about/"
           weight: 10
         - name: "Projects"
-          url: "/project/"
+          url: "project/"
           identifier: "project"
           weight: 20
         - name: "Blog"
-          url: "/post/"
+          url: "post/"
           weight: 30
         # Other single pages not within a section folder can be  
         # added to this menu in front matter of the document i.e. contact.md
