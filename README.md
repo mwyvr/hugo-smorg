@@ -1,6 +1,6 @@
 # hugo-smorg 
 
-* Demo site: https://solutionroute.github.io/hugo-smorg/exampleSite/
+* Demo site: https://solutionroute.github.io/demo/hugo-smorg/
 * Author's Site: [https://mikewatkins.ca/](https://mikewatkins.ca/)
 
 Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
@@ -35,10 +35,11 @@ And offers:
 * Simple "Subsection" pages possible with layout:subsection in front-matter.
 * Breadcrumb-menu in subsection layout, available to others.
 * Produces Atom syndication format with option to disable RSS.
+* JSON-LD microdata
 * Category and Tag taxonomies (partial page-meta)
 * Themed mobile-friendly pagination.
 * Includes syntax highlighting with a choice of colour themes.
-* By default uses zero-wait modern system font stacks; integration with
+* By default uses zero-wait modern system font stacks; easy integration with
   a webfont via a couple lines of SASS and `npm run scss:min`.
 
 ## Screenshot
