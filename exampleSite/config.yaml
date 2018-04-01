@@ -45,6 +45,7 @@ params:
 # Note that "About" is added to the menu within content/about.md - it's 
 # not a true "section" like post and project, although you can change this.
 
+# NOTE: Don't put leading "/" in the url parameter
 menu:
     sectionmenu:
         - name: "About"
