@@ -2,16 +2,18 @@
 
 ## TODO / Coming Soon
 
+Now that the block template / partials improvements are (largely) complete, new
+features to come:
+
 * Add Social Media microdata (Twitter, etc.)
-* Develop a text-minimalist Bulma swatch
-* Make it easy to include a full-screen landing page image without modifying
-  templates such as found: https://mikewatkins.ca/
+* Landing page (with and without catchy images) examples
+* A text-centric minimalist layout customization and companion CSS swatch
 * Per-page image and other resources
-* Review [Hugo internal templates](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/template_embedded.go) and incorporate as needed.
 
-## v0.6
+## v0.7
 
-This is a major change, brought on by a desire to make all components of a page
+This is a major change, incorporating a bunch of smaller tweaks and one big
+template style reorganization brought on by a desire to make all components of a page
 including head, javascript, style overrides, navigation, footer - more easily
 overridable by theme users.  
 
@@ -22,8 +24,8 @@ make minor updates to their site's customized, if any, `layouts/index.html`.
 * Allow for custom header and footer partials; this makes it easy for
   site-specific overrides (such as CSS rules or javascript) to be in
   site/layout/partials without having to replace (and therefore maintain) the
-  entire header + footer partials. Thanks @ColtonProvias for the suggestion
-  which set me off on a road towards more customization possiblities. Fixes #3.
+  entire header + footer partials. Thanks **@ColtonProvias** for the suggestion
+  which set me off this road towards more customization possiblities. Fixes #3.
 * Increase the use of block templates throughout; reduce code in many page
   templates as a result. Don't Repeat Yourself (DRY).
 * Tested against the latest Hugo release 0.38
@@ -54,16 +56,16 @@ make minor updates to their site's customized, if any, `layouts/index.html`.
   files /about/contact.md /about/legal.md to be rendered as a crumb menu at
   top of each page in the section. Add `layout: subsection` in each document
   front-matter (including \_index.md).
-* Included in partials handy value debugprint, thanks @kaushalmodi
+* Included in partials handy value debugprint, thanks **@kaushalmodi**
 * In config set debug: true ; helps diagnose template lookup order issues
 
-## v0.5
+## v0.6
 
 * Bulma-styled Pagination on list / summary / section (post) / taxonomy pages
 * Simplifcation overall; whitespace clean up
 * Fix exampleSite config.yaml
 
-## v0.4
+## v0.5
 
 Focus on fonts and build tools in this revision, prompted a PR for Bulmaswatch. 
 
@@ -81,7 +83,7 @@ Changes:
 * Submodules added to scss: bulmaswatch  chroma-sass-themes system-font-css
 * Add Atom syndication format; [details here](https://github.com/comfusion/after-dark/issues/32#issuecomment-312515542).
 
-## v0.1 - v0.3
+## v0.1 - v0.4
 
 Project organization and a minimally working Hugo theme at each iteration.
 

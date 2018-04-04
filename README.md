@@ -7,19 +7,21 @@ Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
 [Bulma][]-powered, reasonably minimalistic [Hugo][] (https://gohugo.io/) theme
 for an individual blogger or a small organization to adapt as need be.
 
-**Current release**: v0.6, March 20 2018 - see [CHANGELOG](CHANGELOG.md); this
+**Current release**: v0.7, April 4 2018 - see [CHANGELOG](CHANGELOG.md); this
 project is being updated daily at present - following HEAD is best. If you are
-using the theme and spot issues please let me know or submit a PR.
+using the theme and spot issues or areas for improvement please let me know by
+opening an issue or submitting a PR.
 
-An ongoing work in progress, I'm using it as a base for other projects. Maybe
-you will too.  If you use it, let me know; send a screenshot and a _sites using
-this theme_ page will emerge.
+An ongoing work in progress, I'm using Hugo-Smorg as a base for other projects. 
 
 ## Objectives
 
-* Remain easy to understand.
+* Remain easy to understand while also being easy to extend.
 * Keep pace with current [Hugo][] features and practicies.
-* Keep customizability effort low via SASS / CSS and a logical config.yaml.
+* Avoid relying on config.yaml for too much customization.
+* Keep HTML customizability effort low using template blocks and partials and
+  CSS customizability options open via SASS / CSS.
+* Produce output that will validate and load quickly by default.
 
 ## Features
 
