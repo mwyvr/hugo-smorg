@@ -5,15 +5,19 @@
 # themesDir is needed only to run exampleSite in-place
 themesDir: "../.."
 
+# Mandatory variables:
 baseURL: "http://www.example.com/"
 languageCode: "en-us"
-title: "Hugo-smorg"
+title: "Hugo-Smorg Theme"
 theme: "hugo-smorg"
 author: 
     name: "Your Name"
     email: "thisemaildoesnotexist@www.example.com"
 copyright: "&copy; Your Name"
-# GoogleAnalytics: # add your GA ID and uncomment
+
+# Optional:
+#
+# GoogleAnalytics: # add your UA-nnn-nnnnnnnn ID and uncomment
 enableGitInfo: false
 summaryLength: 20
 pygmentsUseClasses: true

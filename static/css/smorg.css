@@ -1,5 +1,6 @@
 /*! hugo-smorg theme | github.com/solutionroute/hugo-smorg */
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i);
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -103,7 +104,7 @@ button,
 input,
 select,
 textarea {
-  font-family: system-ui, sans-serif; }
+  font-family: "Open Sans", system-ui, sans-serif; }
 
 code,
 pre {

@@ -13,7 +13,8 @@
 // 2 
 $body-size:16px; 
 $link: hsl(217, 71%,  53%);
-$family-sans-serif: system-ui, sans-serif;
+$family-sans-serif: "Open Sans", system-ui, sans-serif;
+$family-primary: $family-sans-serif;
 $family-monospace: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
 // 3
 @import "bulma/bulma";
@@ -29,6 +30,9 @@ $family-monospace: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, 
 // Defines a future-proof "system-ui" font using local system font face declarations
 @import 'system-font-css/system-font';
 
+// Optional!
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i);
+
 // make footer background on short pages seem infinite
 html {
 	background-color: $white-ter !important;
@@ -40,4 +44,3 @@ body > section {
 		padding: 0px !important;
 	}
 }
-

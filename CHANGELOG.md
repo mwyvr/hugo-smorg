@@ -3,15 +3,36 @@
 ## TODO / Coming Soon
 
 * Add Social Media microdata (Twitter, etc.)
-* Google analytics and other quick hit items
 * Develop a text-minimalist Bulma swatch
 * Make it easy to include a full-screen landing page image without modifying
   templates such as found: https://mikewatkins.ca/
+* Per-page image and other resources
 * Review [Hugo internal templates](https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/template_embedded.go) and incorporate as needed.
 
-## HEAD 
+## v0.6
 
-* layouts/_defaults/errorpage.html - allows for creation of NNN HTTP errorcode
+This is a major change, brought on by a desire to make all components of a page
+including head, javascript, style overrides, navigation, footer - more easily
+overridable by theme users.  
+
+Users of v0.5 and earlier who have made theme customizations for their site
+should find most everything works out of the box but may discover they need to
+make minor updates to their site's customized, if any, `layouts/index.html`.
+
+* Allow for custom header and footer partials; this makes it easy for
+  site-specific overrides (such as CSS rules or javascript) to be in
+  site/layout/partials without having to replace (and therefore maintain) the
+  entire header + footer partials. Thanks @ColtonProvias for the suggestion
+  which set me off on a road towards more customization possiblities. Fixes #3.
+* Increase the use of block templates throughout; reduce code in many page
+  templates as a result. Don't Repeat Yourself (DRY).
+* Tested against the latest Hugo release 0.38
+  (https://gohugo.io/news/0.38-relnotes/000000000) but the theme does not make
+  use of any leading edge features and can likely be used with much earlier
+  versions of Hugo.
+* Add Google analytics support using Hugo internal template, add site variable
+  and your GA ID to config.yaml: GoogleAnalytics: 
+* `layouts/_defaults/errorpage.html` - allows for creation of NNN HTTP errorcode
   pages i.e. 401.html (with 401.md). In frontmatter specify layout:errorpage
 * Added /shortcodes/ig.html as a script-less instagram alternative. May
   disappear.
@@ -22,7 +43,9 @@
 * Removed Font Awesome; nothing wrong with it but for a handful of icons,
   leaving that decision up to site users. Unicode icons used where needed. See
   https://www.materialui.co/unicode-characters/symbols for ideas.
-* Added favicon.html partial and Params.favicon boolean - make a matching icon set from the solid https://realfavicongenerator.net/
+* Added favicon.html partial and Params.favicon boolean - make a matching icon
+  set from the solid https://realfavicongenerator.net/
+
 * Moved page-meta partial to subtitle - see Posts for example.
 * Fixed URL path bug on pages with categories and tags; sorted collections.
 * Refactored breadcrumbs, simpler and hopefully solid now; uses .Slug or .Name; override in menus.

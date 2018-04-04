@@ -12,7 +12,8 @@
 		"@type": "Person", 
 		{{ with .name }} "name": "{{ . }}",{{ end }}
 		{{ with .email }}"email": "{{ . }}"{{ end }}
-	}{{ end }}{{ with .Site.Params.publisher }},
+	}{{ end }}
+	{{- with .Site.Params.publisher }},
 	"publisher": {
 		{{ with .name }} "name": "{{ . }}",{{ end }}
 		{{ with .type }} "type": "{{ . }}"{{ end }}

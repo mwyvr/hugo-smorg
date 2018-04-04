@@ -1,25 +1,23 @@
 <!--
-References config file variables:
+	Included in baseof.html "head" block by default. Page templates can either
+	replace the entire head, or include additional elements using:
+		partials/head-custom.html (meta, link, styles, etc)
+		partials/js-head.html (any Javascript that must be in head)
 	
+	Always consult _default/baseof.html to see what you may be replacing or overriding.
+	Note: Title is defined in _defaults/baseof.html and layouts/*.html
 -->
-<head> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
 	<base href="{{ .Site.BaseURL }}">
 	{{ if ne .Kind "404" }}<link rel="canonical" href="{{ .Permalink }}">
-    {{- if .IsHome }}
-	<title>{{ .Site.Title | default "Set Site Title in config.yaml" }}</title>
-	{{ else }}
-	<title>{{ .Title | default "Set Title in doc" }} - {{ .Site.Title }}</title>
-	{{ end }}
 	{{- with $.Site.Params.description }}<meta name="description" content="{{.}}">{{ end }}
-	{{- range .AlternativeOutputFormats }}
+	{{- range .AlternativeOutputFormats }} <!-- RSS, Atom feeds -->
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
 	      href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">{{ end }}
 	{{- end }}
 	<link rel="preload" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}" as="style">
 	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}">
 	{{ .Hugo.Generator -}}
-	{{- partial "favicon.html" . }}
-</head>
+	{{- partial "favicon.html" . -}}

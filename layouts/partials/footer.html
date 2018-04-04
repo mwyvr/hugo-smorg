@@ -8,10 +8,11 @@ References config file variables:
 <footer class="footer">
   <div class="container content">
 	<div class="has-text-centered">
-		<p>{{ with .Site.Params.logotype }}{{ . | safeHTML }}
+		<p>{{ with .Site.Params.footer }}{{ . | safeHTML }}
+			  {{ else }}{{ "Add config: Params.footer" }}{{end}}
+		   {{ with .Site.Params.logotype }}{{ . | safeHTML }}
 			  {{ else }}{{ "Add config: Params.logotype" }}{{end}} 
-		   {{ with .Site.Params.footer }}{{ . | safeHTML }}
-			  {{ else }}{{ "Add config: Params.footer" }}{{end}}</p>
+		   </p>
 		<hr>
 		<p class="has-text-grey is-size-7">
 		{{ with .Site.Params.subfooter }} {{ . | safeHTML }}<br>
