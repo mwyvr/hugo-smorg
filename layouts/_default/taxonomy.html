@@ -1,6 +1,3 @@
-{{ define "nav" }}
-  {{ partial "nav.html" . }}
-{{ end }}
 {{ define "main" }}
 {{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/taxonomy.html</p>{{ end -}}
 <section class="section" itemscope itemtype="http://schema.org/AboutPage">
@@ -18,7 +15,4 @@
 		</div>
 	</div>
 </section>
-{{ end }}
-{{ define "footer" }}
-  {{ partial "footer" . }}
 {{ end }}

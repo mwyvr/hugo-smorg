@@ -1,0 +1,44 @@
+<section class="section hero is-fullheight" itemscope itemtype="http://schema.org/HomePage">
+	<div class="hero-head">
+		{{ partial "nav.html" . }}
+	</div>
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-8 is-offset-2 has-text-centered">
+					<h1 class="title">{{ partial "logo.html" . }}</h1>
+					<h2 class="subtitle">
+						{{ with .Site.Params.fullname }}{{ . }}
+						{{ else }}{{ "Add params:fullname" }}{{end}}
+					</h2>
+					<div class="content">
+					{{ .Content }}
+					</div>
+					<div class="columns">
+						<div class="column">
+							<h3 class="subtitle has-text-primary is-marginless">Posts</h3>
+							<ul>
+							{{ range first 5 (where .Data.Pages "Section" "post") }}
+							<li><a href="{{.Permalink}}"><span class="icon">✎</span>{{ .Title }}</a></li>
+							{{ end }}
+							<li><a href="{{ "post/" | absURL}}">More posts<span class="icon">➤</span></a></li>
+							</ul>
+						</div>
+						<div class="column">
+							<h3 class="subtitle has-text-priimary is-marginless">Projects</h3>
+							<ul>
+							{{ range first 5 (where .Data.Pages "Section" "project") }}
+							<li><a href="{{.Permalink}}"><span class="icon">※</span>{{ .Title }}</a></li>
+							{{ end }}
+							<li><a href="{{ "project/" | absURL }}">More projects<span class="icon">➤</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero-foot">
+{{ partial "footer.html" . }}
+	</div>
+</section>
