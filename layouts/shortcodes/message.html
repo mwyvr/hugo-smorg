@@ -1,0 +1,9 @@
+<!--
+   - Uses Bulma "message" class to output a boxed message with a shaded header
+   - available type: is-dark is-info is-warning is-danger is-success
+   -->
+
+<article class="message {{ with .Get "type"}}{{.}}{{ end }}">
+  <div class="message-header"><p>{{ with .Get "header" }}{{ . | markdownify }}{{ end }}</p></div>
+  <div class="message-body">{{ with .Inner }}{{ printf "%s" . | markdownify }}{{ end }}</div>
+</article>
