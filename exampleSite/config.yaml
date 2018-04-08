@@ -59,6 +59,18 @@ menu:
           url: "project/"
           identifier: "project"
           weight: 20
+        - name: "Hugo-Smorg"
+          parent: "project"
+          weight: 10
+          url: "project/hugo-smorg/"
+        - name: "Blorg Bread Machine"
+          parent: "project"
+          weight: 20
+          url: "project/blorg-bread-machine/"
+        - name: "XYZ-1000"
+          parent: "project"
+          weight: 30
+          url: "project/xyz-1000/"
         - name: "Blog"
           url: "post/"
           weight: 30

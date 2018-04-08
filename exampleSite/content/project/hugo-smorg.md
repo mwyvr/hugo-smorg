@@ -4,7 +4,6 @@ description: "A responsive mobile-first Bulma-powered minimalistic
 			  theme for the Hugo static site generator."
 date: 2018-03-07T02:16:58-08:00
 draft: false
-weight: 100
 categories: ['hugo',]
 tags: ['theme','bulma']
 ---
