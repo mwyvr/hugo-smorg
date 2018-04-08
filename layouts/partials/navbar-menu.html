@@ -1,0 +1,27 @@
+<!-- produces a Bulma-styled flat or drop-down menu from config.yaml/toml/json 
+	 menu definition.
+	 https://bulma.io/documentation/components/navbar/
+-->
+{{ $currentPage := . }}
+{{ range .Site.Menus.sectionmenu }}
+	{{ if .HasChildren }}
+	<div class="navbar-item has-dropdown is-hoverable">
+		{{ template "navbar-link" . }}
+		<div class="navbar-dropdown">
+		{{ range .Children }}
+			{{ template "navbar-item" . }}
+		{{ end }}
+		</div>
+	</div>
+	{{ else }}
+		{{ template "navbar-item" . }}
+	{{ end }}
+{{ end }}
+
+{{ define "navbar-item" }}
+<a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
+
+{{ define "navbar-link" }}
+<a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
