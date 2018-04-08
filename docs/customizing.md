@@ -1,13 +1,42 @@
-# Customizing Hugo-Smorg For Your Site
+# Customizing The Hugo-Smorg Theme
 
-TODO - write this!
+_April 2018: This is a work in progress. See the [heavily commented exampleSite configuration file](../exampleSite/config.yaml) for additional information._
 
-## Overview
+[Hugo Configuration File](hugo-configuration-file)  
+[Overriding Hugo Themes](overrriding-hugo-themes)  
+
+## Hugo Configuration File
+
+The heavily commented [config.yaml](../exampleSite/config.yaml) will be your
+first stop for customizing Hugo and the Hugo-Smorg theme. 
+
+Use `config.yaml` as the starting point for your site; copy it to your site
+directory:
+
+	mysite/
+	config.yaml
+	content/
+	themes/
+		hugo-smorg
+
+**Important**: Remove the first configurable parameter `themesDir` from the
+example configuration; it is used only for generation of a demo site for the
+Hugo themes showcase.
+
+## Template Overview
 
 Hugo-Smorg makes use of Hugo's [block template](https://gohugo.io/templates/base/#define-the-base-template) features as well as [partials](https://gohugo.io/templates/partials/#use-partials-in-your-templates).
 
 This documentation isn't meant to replace Hugo's docs but to provide a starting
 point to answer _how do I do XYZ_ questions.
+
+## Hugo Configuration File
+
+When starting up a new site it's easiest to simply copy the
+[exampleSite/config.yaml](./exampleSite/config.yaml) and tune the settings
+within according to your needs. 
+
+
 
 ## Overriding Hugo Themes
 
@@ -118,7 +147,7 @@ The navigation partial `nav.html` is on some pages defined in a block; others
   block.
 
 
-```html
+```go-html-template
 <!DOCTYPE html> <!-- See docs/customizing.md for help -->
 <html lang="{{ .Site.LanguageCode | default "en" }}">
 <head>
