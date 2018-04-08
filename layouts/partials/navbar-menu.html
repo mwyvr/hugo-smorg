@@ -19,9 +19,9 @@
 {{ end }}
 
 {{ define "navbar-item" }}
-<a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
+<a class="navbar-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
 {{ end }}
 
 {{ define "navbar-link" }}
-<a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a>
+<a class="navbar-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
 {{ end }}
