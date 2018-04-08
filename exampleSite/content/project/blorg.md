@@ -17,3 +17,5 @@ The hand-crafted Blorg Bread Baker(TM) enhances any kitchen. Produced from 100% 
 * Controllable-Anywhere, part of the Internet Of Things
 
 Some versions may include a BetaMax(tm) video tape interface.
+
+![Futuristic Bread Truck](../project/futuristic-bread-truck.jpg)
