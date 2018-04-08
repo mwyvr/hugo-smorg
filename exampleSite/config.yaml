@@ -1,51 +1,132 @@
-# exampleSite 
+# exampleSite/config.yaml
 #
-# demo site for Hugo-smorg, a theme for the Hugo static site generator. https://gohugo.io/
+# Configuration file for the demonstration of the Hugo-smorg theme,
+# mobile-first, responsive theme for the Hugo static site generator.
+# https://gohugo.io/
 
-# themesDir is needed only to run exampleSite in-place
+# IMPORTANT:
+# themesDir is needed only to run exampleSite in-place; comment out or delete
+# this line for regular theme use:
 themesDir: "../.."
 
-# Mandatory variables:
+# Mandatory $.Site Variables ---------------------------------------------
+# Site variables are built-in to the Hugo application and can be accessed using
+# the {{ $.Site.variablename }} template directive. 
+#
+# Every site needs these few: theme, baseURL, languageCode and title
+# Name of the theme your Hugo site uses; leave this in place:
+theme: "hugo-smorg"
 baseURL: "http://www.example.com/"
 languageCode: "en-us"
 title: "Hugo-Smorg Theme"
-theme: "hugo-smorg"
-author: 
-    name: "Your Name"
-    email: "thisemaildoesnotexist@www.example.com"
-copyright: "&copy; Your Name"
 
-# Optional:
+# Optional $.Site Variables ----------------------------------------------
+# More info on Site variables; https://gohugo.io/getting-started/configuration/
 #
-# GoogleAnalytics: # add your UA-nnn-nnnnnnnn ID and uncomment
-enableGitInfo: false
+# Optional variables can be edited or commented out as desired.
+#
+# author name appears in RSS and Atom feeds; 
+# author email address is optional and can be # commented out.
+author: 
+    name: "Your Name or your organization's name"
+    email: "thisemaildoesnotexist@www.example.com"
+
+# copyright appears in the default site footer 
+copyright: "&copy; Your Name or Organization Name"
+
+# metaDataFormat for new content pages generated with the `hugo new` command if
+# not otherwise specified by an archetype. Hugo-Smorg theme examples all use
+# the easy to understand and write YAML format.
+metaDataFormat: yaml
+
+# summaryLength limits the number of words included in auto-generated page
+# summaries Manual control of summaries is possible using the <!--more-->
+# directive in content files. https://gohugo.io/content-management/summaries/
 summaryLength: 20
+
+# paginate sets the maximum number of items (pages) in a page listing.
+paginate: 2  # set very low for demo purposes only, 5 - 10 or more would be reasonable 
+
+# GoogleAnalytics offers deep insight into how visitors use your site. It's
+# optional, and free: https://www.google.com/analytics/analytics/
+# Only uncomment if you have a GA UD:
+# GoogleAnalytics: # add your UA-nnn-nnnnnnnn ID and uncomment
+
+# Code oriented optional features:
+# pygments variables tune code syntax highlighting features Hugo provides
 pygmentsUseClasses: true
 pygmentsCodefencesGuessSyntax: true
 pygmentsCodefences: true
-paginate: 2  # you'll want a higher, reasonable number
+
+# enableGitInfo populates a .GitInfo object for each git-managed page 
+# The theme does not currently make use of the information.
+enableGitInfo: false
+
+# enableRobotsTXT: <false> enables generation of site robots.txt from
+# front-matter directives. Many sites may prefer to create a robots.txt file in
+# the site content directory.
+enableRobotsTXT: true
+
+# enableEmoji: <false> enables Emoji rendering see:
+# https://www.webpagefx.com/tools/emoji-cheat-sheet/
+enableEmoji: false
 
 
-# Access in templates via $.Site.Params.somevalue ------------------------
+
+
+
+
+
+
+# Optional Features
+# Optional Features ------------------------------------------------------
+# Syndication feeds atom.xml and rss.xml ---------------------------------
+
+
+
+# Site definable variables used by Hugo-Smorg -----------------------------------
+# $.Site.Params variables are user-definable; the Hugo-Smorg theme makes use of
+# a number of variables to enable a certain amount of customization without 
+# requiring editing of templates. See `docs/customizing.md` for more
+# information.
+#
+# Access in templates via $.Site.Params.somevariablename ------------------------
 params: 
-    debug: false # cause template path to be output at top of page, handy for dev
-    cssPath: 'css/smorg.css' # Default, override here
+    # debug: true causes template path to be output at top of page, handy for dev
+    debug: false 
+
+    # cssPath: <css/smorg.css> site main CSS; can be supplemented by including
+    # link or style elements in a custom site partials/head-custom.html
+    cssPath: 'css/smorg.min.css' # Default, override here
+
+    # only_feed_summaries: Include only Page summaries in Atom and RSS feeds. 
     only_feed_summaries: true
+
+    # fullname: Used in head and footer partials; Atom and RSS generation.
+    # JSON-LD microdata for search engines
     fullname: "Your Full Or Organization Name"
-    description: "160 characters or less describing you or your organization or your site's purpose."
-    # Further customize logo in partials/logo.html; 
-    # used in partials nav.html and footer.
+
+    # Description: Used per fullname.
+    description: "160 characters or less describing you or your organization or your 
+                  site's purpose."
+
+    # Sites should customize their logo or wordmark here; Provided via partials/logo.html.
+    # used in default navigation and footer.
     logotype: '<span class="has-text-weight-bold">hugo-<span class="has-text-danger">smorg</span></span>' 
     footer: 'An open source theme by <a href="https://mikewatkins.ca/">Mike Watkins</a>'
     subfooter: '<i class="fab fa-github"></i> <a href="https://github.com/solutionroute/hugo-smorg">github.com/solutionroute/hugo-smorg</a>'
-        # Schema.org
+
+    # Optional information used in RSS, Atom and JSON-LD microdata. See Schema.org.
     publisher:
-        # Organization, Person
+        # Type must be either "Organization" or "Person"
         type: Organization
         name: Name of organization or person
         logo: url to logo image
+
+
 # Primary Navigation Menu (partials/nav.html) ----------------------------
-# Our exampleSite menu exploses About, Projects and Blog
+
+# The exampleSite menu exploses About, Projects and Blog
 # Note that "About" is added to the menu within content/about.md - it's 
 # not a true "section" like post and project, although you can change this.
 
@@ -54,28 +135,37 @@ menu:
     sectionmenu:
         - name: "About"
           url: "about/"
+          identifier: "about"
           weight: 10
+
+        - name: "Contact Us"
+          url: "about/contact/"
+          parent: "about"
+          weight: 101
+
         - name: "Projects"
           url: "project/"
           identifier: "project"
           weight: 20
+
         - name: "Hugo-Smorg"
-          parent: "project"
-          weight: 10
           url: "project/hugo-smorg/"
+          parent: "project"
+          weight: 201
+
         - name: "Blorg Bread Machine"
-          parent: "project"
-          weight: 20
           url: "project/blorg-bread-machine/"
-        - name: "XYZ-1000"
           parent: "project"
-          weight: 30
+          weight: 202
+
+        - name: "XYZ-1000"
           url: "project/xyz-1000/"
+          parent: "project"
+          weight: 203
+
         - name: "Blog"
           url: "post/"
           weight: 30
-        # Other single pages not within a section folder can be  
-        # added to this menu in front matter of the document i.e. contact.md
 
 # Syndication feeds atom.xml and rss.xml ---------------------------------
 # Adds Atom feed support in conjunction with /layouts/index.atom.xml
