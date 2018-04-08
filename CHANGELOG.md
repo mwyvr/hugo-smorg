@@ -10,12 +10,19 @@ features to come:
 * A text-centric minimalist layout customization and companion CSS swatch
 * Per-page image and other resources
 
+## HEAD
+
+* Refactored partial/nav.html; added partial/navbar-menu.html providing for
+  Bulma-styled main navigation drop-down capable menus driven from config file
+  menu structure.
+* Update exampleSite config.yaml and content to demonstrate drop down menus.
+
 ## v0.7
 
 This is a major change, incorporating a bunch of smaller tweaks and one big
 template style reorganization brought on by a desire to make all components of a page
 including head, javascript, style overrides, navigation, footer - more easily
-overridable by theme users.  
+over-ridable by theme users.  
 
 Users of v0.5 and earlier who have made theme customizations for their site
 should find most everything works out of the box but may discover they need to
@@ -25,7 +32,7 @@ make minor updates to their site's customized, if any, `layouts/index.html`.
   site-specific overrides (such as CSS rules or javascript) to be in
   site/layout/partials without having to replace (and therefore maintain) the
   entire header + footer partials. Thanks **@ColtonProvias** for the suggestion
-  which set me off this road towards more customization possiblities. Fixes #3.
+  which set me off this road towards more customization possibilities. Fixes #3.
 * Increase the use of block templates throughout; reduce code in many page
   templates as a result. Don't Repeat Yourself (DRY).
 * Tested against the latest Hugo release 0.38
@@ -41,7 +48,7 @@ make minor updates to their site's customized, if any, `layouts/index.html`.
 * Added partials/filter-html.html, used in index.atom.xml to filter script tags
   among other things from .Summary and .Content for feed validation (and
   safety).
-* Replace submodules so they can be cloned anonymously via https, thanks L0g4n
+* Replace submodules so they can be cloned anonymously via https, thanks **@L0g4n**
 * Removed Font Awesome; nothing wrong with it but for a handful of icons,
   leaving that decision up to site users. Unicode icons used where needed. See
   https://www.materialui.co/unicode-characters/symbols for ideas.

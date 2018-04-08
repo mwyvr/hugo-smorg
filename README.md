@@ -7,7 +7,7 @@ Hugo-smorg (small-org? smorgasbord?) is a responsive mobile-first
 [Bulma][]-powered, reasonably minimalistic [Hugo][] (https://gohugo.io/) theme
 for an individual blogger or a small organization to adapt as need be.
 
-**Current release**: v0.7, April 4 2018 - see [CHANGELOG](CHANGELOG.md); this
+**Current release**: v0.7, April 4 2018 - see [CHANGELOG](./CHANGELOG.md); this
 project is being updated daily at present - following HEAD is best. If you are
 using the theme and spot issues or areas for improvement please let me know by
 opening an issue or submitting a PR.
@@ -34,6 +34,7 @@ Hugo-smorg is:
 
 And offers:
 
+* Responsive site-wide drop-down capable navigation menu
 * Simple "Subsection" pages possible with layout:subsection in front-matter.
 * Breadcrumb-menu in subsection layout, available to others.
 * Produces Atom syndication format with option to disable RSS.

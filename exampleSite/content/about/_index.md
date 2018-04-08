@@ -1,5 +1,5 @@
 ---
-title: "About- Demo of Subsection Layout"
+title: "About - Demo of Subsection Layout"
 description: "Demonstration of Hugo content management approach for subsection
 pages and associated breadcrumb menu."
 date: 2018-03-07T02:16:58-08:00

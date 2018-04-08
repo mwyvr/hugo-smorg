@@ -2,26 +2,26 @@
 	 menu definition.
 	 https://bulma.io/documentation/components/navbar/
 -->
-{{ $currentPage := . }}
-{{ range .Site.Menus.sectionmenu }}
-	{{ if .HasChildren }}
+{{- $currentPage := . }}
+{{- range .Site.Menus.sectionmenu.ByWeight }}
+	{{- if .HasChildren }}
 	<div class="navbar-item has-dropdown is-hoverable">
-		{{ template "navbar-link" . }}
+		{{ template "navbar-link" . -}}
 		<div class="navbar-dropdown">
-		{{ range .Children }}
+			{{- range .Children -}}
 			{{ template "navbar-item" . }}
-		{{ end }}
+			{{- end -}}
 		</div>
 	</div>
-	{{ else }}
+	{{- else -}}
 		{{ template "navbar-item" . }}
-	{{ end }}
-{{ end }}
+	{{- end -}}
+{{- end -}}
 
 {{ define "navbar-item" }}
-<a class="navbar-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+	<a class="navbar-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
 {{ end }}
 
 {{ define "navbar-link" }}
-<a class="navbar-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+	<a class="navbar-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
 {{ end }}
