@@ -52,6 +52,11 @@ paginate: 2  # set very low for demo purposes only, 5 - 10 or more would be reas
 # Only uncomment if you have a GA UD:
 # GoogleAnalytics: # add your UA-nnn-nnnnnnnn ID and uncomment
 
+# Disqus is a popular commenting system; to get an account visit:
+# https://disqus.com/admin/create/`
+# Uncommenting will result in Disqus capability extended to each blog post.
+# disqusShortname: "yourdiscussshortname"
+
 # Code oriented optional features:
 # pygments variables tune code syntax highlighting features Hugo provides
 pygmentsUseClasses: true
@@ -78,19 +83,14 @@ enableEmoji: false
 
 
 
-# Optional Features
 # Optional Features ------------------------------------------------------
-# Syndication feeds atom.xml and rss.xml ---------------------------------
 
-
-
-# Site definable variables used by Hugo-Smorg -----------------------------------
 # $.Site.Params variables are user-definable; the Hugo-Smorg theme makes use of
-# a number of variables to enable a certain amount of customization without 
+# a number of variables to enable a certain amount of customization without
 # requiring editing of templates. See `docs/customizing.md` for more
 # information.
-#
-# Access in templates via $.Site.Params.somevariablename ------------------------
+
+# Access in templates via $.Site.Params.somevariablename 
 params: 
     # debug: true causes template path to be output at top of page, handy for dev
     debug: false 
