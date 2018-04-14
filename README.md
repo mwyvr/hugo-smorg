@@ -75,6 +75,6 @@ node-sass. You'll also find some handy run scripts including `npm run dev`
 which will build your site and SCSS/CSS files and reload automatically.
 
 [Hugo]: https://gohugo.io/
-[demo site]: https://solutionroute.github.io/hugo-smorg/exampleSite/
+[demo site]: https://solutionroute.github.io/demo/hugo-smorg/
 [Bulma]: https://bulma.io/ 
 [Bulmaswatch]: https://jenil.github.io/bulmaswatch/
