@@ -1,0 +1,24 @@
+<section class="section hero is-fullheight" itemscope itemtype="http://schema.org/HomePage">
+	<div class="hero-head">
+		{{ partial "nav.html" . }}
+	</div>
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-8 is-offset-2 has-text-centered">
+					<h1 class="title">{{ partial "logo.html" . }}</h1>
+					<h2 class="subtitle">
+						{{ with .Site.Params.fullname }}{{ . }}
+						{{ else }}{{ "Add params:fullname" }}{{end}}
+					</h2>
+					<div class="content">
+					{{ .Content }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero-foot">
+{{ partial "footer.html" . }}
+	</div>
+</section>
