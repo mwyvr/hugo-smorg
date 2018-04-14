@@ -12,6 +12,9 @@ features to come:
 
 ## HEAD
 
+* Added partials/home/only-content.html, provides the simplest possible landing
+  page with content only from the relevant `_index.md`. See layouts/index.html
+  for where to include.
 * Refactored partial/nav.html; added partial/navbar-menu.html providing for
   Bulma-styled main navigation drop-down capable menus driven from config file
   menu structure.
