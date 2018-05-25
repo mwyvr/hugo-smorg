@@ -21,3 +21,6 @@
 	<link rel="stylesheet" href="{{ $.Site.Params.cssPath | default "css/smorg.css" | absURL }}">
 	{{ .Hugo.Generator -}}
 	{{- partial "favicon.html" . -}}
+	{{ if .Site.Params.cookie_consent_info_url }}
+    		{{ partial "cookie-consent.html" . }}
+	{{ end }}
