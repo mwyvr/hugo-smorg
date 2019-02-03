@@ -1,0 +1,30 @@
+<!-- Based on Hugo internal shortcode template 
+	See: https://dev.twitter.com/web/embedded-tweets
+-->
+{{- with getJSON "https://api.twitter.com/1/statuses/oembed.json?id=" (index .Params 0) }}
+<br>
+	  {{ .html | safeHTML }}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="card">
+	<header class="card-header">
+		<p class="card-header-title iis-5">{{ .title }}</p>
+	</header>
+  <div class="card-content">
+	  {{ .html | safeHTML }}
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="content">
+
+		  <p class="ssubtitle xis-6"><a href="{{ .author_url }}">@{{ .author_name }}</a> &middot; <em><a href="{{ .provider_url }}">{{ .provider_name }}</a></em></p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+

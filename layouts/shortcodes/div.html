@@ -1,0 +1,12 @@
+<!--
+   - Short code to wrap any markdown content (such as a table) element (like
+   - a table) with a div and one or more optional attributes:
+   -
+   -     id / class / style
+   -->
+<div {{ with .Get "id" }}id="{{.}}"{{ end }} \
+	 {{ with .Get "class" }}class="{{.}}"{{ end }} \
+	 {{ with .Get "style"}} style="{{.}}"{{ end }}>
+  {{ printf "%s" .Inner | markdownify }}
+</div>
+

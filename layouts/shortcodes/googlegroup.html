@@ -1,0 +1,19 @@
+<!--
+   - Short code to render Google Group
+   -
+   -    url 
+   -->
+<iframe id="forum_embed"
+  src="javascript:void(0)"
+  scrolling="no"
+  frameborder="0"
+  height="800"
+  style="width:100%;"
+  >
+</iframe>
+<script type="text/javascript">
+  document.getElementById('forum_embed').src =
+	 {{ with .Get "url" }}'{{.}}'{{ end }}
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+</script>
