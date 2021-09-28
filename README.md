@@ -1,3 +1,5 @@
+This project is no longer being maintained. Check https://github.com/solutionroute/ for any newer Hugo themes.
+
 # hugo-smorg 
 
 * Demo site: https://solutionroute.github.io/demo/hugo-smorg/
